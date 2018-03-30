@@ -20,12 +20,15 @@
 
 	$("input:checkbox").change(function() {
 		var content = $(this).prev();
+		var icon = $(this).next();
 		if($(this).get(0).checked) {
 			content.removeClass('ellips');
 			content.css({ height : '100%'});
+			icon.html('');
 		} else {
 			content.addClass('ellips');
 			content.removeAttr('style');
+			icon.html('<span style="color: #666">read more</span>');
 		}
 	});
 	
