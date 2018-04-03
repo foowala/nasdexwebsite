@@ -45,3 +45,12 @@
 		}
 	}
 
+	function onMenu() {
+		var header =$($('.head-grid .headerFr').get(0));
+		if(header.height() > 0) {
+			header.animate({height : '0px'})
+		} else {
+			header.animate({height : '320px'})
+		}
+	}
+

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name = "format-detection" content="telephone = no" />
+		<!-- <meta name="Keywords" content="福哇啦,foowala,餐厅酒水服务，精明POS，Foowala Genie POS" /> -->
+		<title>DROPCHAIN</title>
+		<link rel="shortcut icon" href="static/images/logo/full-logo.png">
+		<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="static/css/style2.css" />
+		<link rel="stylesheet" href="static/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="logo clearfix"><img src="static/images/logo/logo.png" class="logo" alt="logo" /></div>
+			<div class="headerFr clearfix">
+				<ul class="hidden-md-down clearfix changeLang">
+					<li><a href="#whitepaper">WHITEPAPER</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#block">BLOCKCHAIN</a></li>
+					<li><a href="#team">TEAM</a></li>
+					<li><a href="#advisor">ADVISOR</a></li>
+					<li><a href="#map">ROADMAP</a></li>
+					<li><a href="#media">MEDIA</a></li>
+					<!-- <li><a href="mailto:contactus@foowala.com"><img src="static/images/icon/plan.png" class="header-img" alt=""></a></li> -->
+				</ul>
+			</div>
+		</div>
+		<!--END:NAVBAR-->
+
+		<div class="mobile_header">
+			<div class="navbtn">
+				<div class="logo"><img src="static/images/logo/logo.png" alt="logo" /></div>
+				<div class="menu" onclick="onMenu()"><img src="static/images/icon.png" alt="menu" />
+				</div>
+			</div>
+			
+			<div class="headerFr">
+				<ul class="hidden-md-down clearfix changeLang">
+					<li><a href="#whitepaper">WHITEPAPER</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#block">BLOCK CHAIN</a></li>
+					<li><a href="#team">TEAM</a></li>
+					<li><a href="#advisor">ADVISOR</a></li>
+					<li><a href="#map">ROAD MAP</a></li>
+					<li><a href="#media">MEDIA</a></li>
+					<li><a href="mailto:contactus@foowala.com"><img src="static/images/icon/plan.png" class="header-img" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--END:MOBLIENAVBAR-->
+
+		
+		<div class="index-banner changeLang">
+			<div class="banner-title">THE FUTURE OF SUPPLY CHAIN</div>
+			<div class="banner-btn"><a href="static/pdf/DropChain-Whitepaper.pdf" download="DropChain-Whitepaper">WHITEPAPER</a></div>
+		</div>
+		<!-- END:BANNER -->
+
+		
+		<div id="about">
+			<div class="container">
+				<div class="row main">
+					<div class="col-md-2">
+						<div class="index-title">ABOUT</div>
+						<div class="rotate-title">ABOUT</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text">
+							<p>DropChain is the first alcohol-focused supply chain ecosystem addressing the need for transparency and traceability in the alcohol industry.</p>
+							<p>Current Blockchain solutions simply focus on distributing tokens to data centers but fail to realize humans are central to supply chains and individual incentives must be aligned along the way.</p>
+							<p>DropChain leverages tokenized Blockchain technology to create an innovative gamified cryptoeconomic incentive program that rewards each physical distribution channel for their participation in the supply chain.</p>
+							<p>This in turn will drive full transparency in the supply chain ecosystem, enabling big brands to acquire the laser-focused market data they need to make better business decisions. At the same time, it addresses the food safety issues prevalent in developing countries today, allowing consumers to trace a product from grape to glass.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item-img">
+							<img src="static/images/about-img.jpg" alt="" class="about-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END:ABOUT -->
+
+		
+		<div id="block">
+			<div class="container">
+				<div class="row main">
+					<div class="col-md-2">
+						<div class="index-title">BLOCKCHAIN</div>
+						<div class="rotate-title" style="top:150px;">BLOCKCHAIN</div>
+					</div>
+					<div class="col-md-10">
+						<div class="block-img">
+							<div class="block-chain zoom" data-background="rgba(0, 0, 0, .6)"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END:BLOCK CHAIN -->
+
+
+
+		<div id="team">
+			<div class="container">
+				<div class="row main">
+					<div class="col-md-2">
+						<div class="index-title">OUR TEAM</div>
+						<div class="rotate-title">OUR TEAM</div>
+					</div>
+					<div class="col-md-10">
+						<div class="row">
+				<div class="col-md-6 item">
+					<div class="row">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/billy.jpg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">Billy Chan<a href="https://www.linkedin.com/in/chanbilly/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">CEO</div>
+								<div class="introduce">
+									Billy is an IT industry veteran with over 15 years of global experience in software development, sales and consulting with tech firms such as  Microsoft. DropChain is a culmination of his interests in digital technology, supply chains, and yes, alcohol.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 item">
+					<div class="row">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/charles.jpg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">Charles Zeng<a href="https://www.linkedin.com/in/charles-zeng-2107912b/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">COO</div>
+								<div class="introduce">
+									Charles worked for PwC, Shell Oil and L'Oreal before pursuing his passion for entrepreneurship in China. In 7 years, Charles has opened 7 restaurants, built up his own brand and is a well-known figure in Shanghai’s F&B industry.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 item">
+					<div class="row row-style">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/vince.jpeg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">Vincent Nguyen<a href="https://www.linkedin.com/in/vincent-nguyen-0891993/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">Chief of Product</div>
+								<div class="introduce">
+									Formerly of Tencent Games and having led Activision's successful Call of Duty mobile game, Vince provides the product development expertise.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 item">
+					<div class="row">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/james.jpeg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">James Wong<a href="https://www.linkedin.com/in/james-wong-5150611/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">Chief of Marketing</div>
+								<div class="introduce">
+									James is a hands-on professional in Brand, Supply Chain Management, Digital Marketing and eCommerce.  He is an expert turning startups into successful businesses with Paul Frank, Minions, and adidas Swim brands. 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 item">
+					<div class="row">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/kay.jpg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">Kay Neuenhofen<a href="https://www.linkedin.com/in/kay-neuenhofen-42398720/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">Blockchain Engineer</div>
+								<div class="introduce">
+									Kay is an experienced developer who has implemented parts of the Blockchain protocol and written critical systems software and robust customer facing apps for Netflix and Major League Baseball.  
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 item">
+					<div class="row padding-style">
+						<div class="col-md-4 col-sm-3">
+							<img src="static/images/victorLee.jpg" alt="" class="team-img">
+						</div>
+						<div class="col-md-8 col-sm-9 infor">
+							<div class="team-inner team-item">
+								<div class="name">Victor Lee<a href="https://www.linkedin.com/in/victorleejennwei/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="position">Operations Lead</div>
+								<div class="introduce">
+								<!-- <div class="introduce ellips"></div> -->
+									Innovation, technology, blockchain and growth marketer in China. Obsessed and passionate with new movements in innovative technologies, blockchain crypto-currencies ideas, social science projects and disruptive startups. Believes in creating value, helping people and making the world a better place.  
+								</div>
+								<!-- <input type="checkbox">
+								<i class="iconfont icon-down"><span style="color: #666">read more</span></i> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END:TEAM -->
+		
+
+
+		<div id="advisor">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-1">
+					<div class="index-title">ADVISOR</div>
+					<div class="rotate-title">ADVISOR</div>
+				</div>
+				<div class="col-md-11">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="static/images/WilliamBaoBean.jpeg" alt="" class="	team-img">
+							<div class="team-inner">
+								<div class="name">William Bao Bean<a href="https://www.linkedin.com/in/williambaobean/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">General Partner</div>
+								<div class="advisor-introduce">
+									SOSV
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<img src="static/images/TerenceW.jpeg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Terence Wang<a href="https://www.linkedin.com/in/terence-wang-873358/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">Managing Partner</div>
+								<div class="advisor-introduce">
+									AGA Capital 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<img src="static/images/MalcolmTan.jpeg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Malcolm Tan<a href="https://www.linkedin.com/in/malcolm-tan-491b6816/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">CEO</div>
+								<div class="advisor-introduce">
+									DXCEL International
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<img src="static/images/Felix.jpeg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Felix Wendlandt<a href="https://www.linkedin.com/in/felixwendlandt/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">GM</div>
+								<div class="advisor-introduce">
+									Brander Craft Beers
+								</div>
+							</div>
+						</div>		
+						<div class="col-md-3">
+							<img src="static/images/AdrianLam.jpeg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Adrian Lam<a href="https://www.linkedin.com/in/adrianlam/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">ICO Advisor</div>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<img src="static/images/AllenFang.jpeg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Allen Fang<a href="https://www.linkedin.com/in/allen-fang-04151911/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">Director</div>
+								<div class="advisor-introduce">
+									Trade & Marketing<br/>
+									Anheuser-Busch InBev
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<img src="static/images/AlvinFoo.jpg" alt="" class="team-img">
+							<div class="team-inner">
+								<div class="name">Alvin Foo<a href="https://www.linkedin.com/in/alvinfsc/" target="_blank"><img src="static/images/icon/link.png" class="link-img" alt=""></a></div>
+								<div class="advisor-position">ICO Advisor</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+
+		<div id="map">
+			<div class="map-title">STAY<span class="map-space"></span>TUNED</div>
+			<div class="map-content">ROADMAP COMING SOON</div>
+		</div>
+		<!-- END: ROAD MAP -->
+
+
+		<div id="media">
+			<div class="container">
+				<div class="row main">
+					<div class="col-md-2">
+						<div class="index-title">MEDIA</div>
+						<div class="rotate-title">MEDIA</div>
+					</div>
+					<div class="col-md-10">
+						<a href="http://mp.weixin.qq.com/s/3f08_juAZSsaK040lZO6yg">
+							<div class="media-title">为什么区块链在供应链的应用是天作之合？</div>
+							<div class="media-img"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="footer">
+			<div class="container main">
+					<div class="footer-left">
+						<div class="address">
+							<!-- <div class="float-left">ADDRESS:</div>
+							<div class="float-right">SINGAPORE and HONG KONG</div> -->
+							Based in Singapore and Hong Kong
+						</div>
+						<div class="clearfloat"></div>
+						<a href="static/pdf/DropChain-Whitepaper.pdf" download="DropChain-Whitepaper" class="download">
+								<div class="text"><img src="static/images/icon/list-black.png" class="footer-icon" />DOWNLOAD WHITEPAPER</div>
+						</a>
+					</div>
+					<div class="footer-right">
+						<img src="static/images/logo/full-logo.png" alt="logo" class="logo-img" />	
+						<div class="other">
+							<a href="https://www.facebook.com/DropChainProject" target="_blank"><img src="static/images/icon/facebook.png" alt="facebook" class="other-img" /></a>
+							<a href="https://twitter.com/thedropchain" target="_blank"><img src="static/images/icon/twitter.png" alt="twitter" class="other-img" /></a>
+							<a href="https://www.linkedin.com/company/dropchain/" target="_blank"><img src="static/images/icon/linkedin.png" alt="linkedin" class="other-img" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END: FOOTER -->
+
+
+
+				
+	<script type="text/javascript" src="static/js/jquery-3.0.0.min.js" ></script>
+	<script type="text/javascript" scr="static/js/modernizr.js"></script>
+	<script type="text/javascript" scr="static/js/main.js"></script>
+	<script type="text/javascript" src="static/js/script.js"></script>
+	</body>
+</html>
+
