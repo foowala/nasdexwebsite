@@ -360,8 +360,8 @@ body{font-family : myFont;}
 
 	/* team */
 	#team .team-img{
-		width  : 335px;
-		height : 335px;
+		min-width  : 305px;
+		min-height : 305px;
 	}
 	#team .col-md-11{
 		text-align : center;
