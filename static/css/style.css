@@ -1,7 +1,7 @@
 body{font-family : myFont;}
 @font-face{font-family: myFont; src: url('../fonts/Futura-Book.otf');}
 @font-face{font-family: myFontL; src: url('../fonts/Futura-Light.otf');}
-@font-face{font-family: myFontB; src: url('../fonts/BebasNeue.ttf');}
+@font-face{font-family: myFontB; src: url('../fonts/Bebasneue.ttf');}
 
 
 /* head */
@@ -125,9 +125,9 @@ body{font-family : myFont;}
 	display     : inline-block; 
 	line-height : 37px; 
 	position    : relative; 
-	top         : 110px; 
+	top         : 150px; 
 	left        : -152px;
-	width       : 300px;
+	width       : 380px;
 }
 .index-title{
 	display : none;
