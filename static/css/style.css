@@ -214,7 +214,7 @@ body{font-family : myFont;}
 	margin : 20px 0 50px;
 }
 #advisor .introduce{
-	height : 30px;
+	height : 50px;
 }
 
 
@@ -374,7 +374,7 @@ body{font-family : myFont;}
 		padding-left : 40px;
 	}
 	#team .item{
-		margin-bottom : 24px;
+		margin-bottom : 30px;
 		padding: 0 30px;
 	}
 	#team .row .introduce{
@@ -387,13 +387,16 @@ body{font-family : myFont;}
 		width: 168px;
 	}
 	#advisor .team-inner{
-		margin: 20px 0;
+		margin : 20px 0;
 	}
 	#advisor .position{
 		font-size : 18px;
 	}
 	#advisor .advisor-grid{
-		margin-top: -40px;
+		margin-top : -40px;
+	}
+	#advisor .link-img{
+		margin-left : 5px;
 	}
 	.position{
 		margin-bottom : 10px;
