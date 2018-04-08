@@ -393,10 +393,13 @@ body{font-family : myFont;}
 
 	/* advisor */
 	#advisor .advisor-img{
-		width : 168px;
+		width: 100%;
+	}
+	#advisor .name{
+		font-size: 20px;
 	}
 	#advisor .link-img{
-		margin-left : 3px;
+		margin-left : 4px;
 	}
 	#advisor .team-inner{
 		margin : 20px 0;
