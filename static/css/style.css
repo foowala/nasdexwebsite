@@ -196,7 +196,6 @@ body{font-family : myFont;}
 .name{
 	font-size   : 22px;
 	font-family : myFontB;
-	height: 25px;
 }
 .position{
 	margin-bottom : 16px;
@@ -221,7 +220,7 @@ body{font-family : myFont;}
 	margin : 20px 0 50px;
 }
 #advisor .introduce{
-	height : 70px;
+	height : 50px;
 }
 
 
@@ -394,7 +393,20 @@ body{font-family : myFont;}
 
 	/* advisor */
 	#advisor .advisor-img{
-		width: 160px;
+		width : 100%;
+	}
+	#advisor .link-img{
+		margin-left : 5px;
+	}
+	#advisor .team-inner{
+		margin : 20px 0;
+	}
+	#advisor .position{
+		font-size     : 18px;
+		margin-bottom : 10px;
+	}
+	/*#advisor .advisor-img{
+		width: 168px;
 	}
 	#advisor .team-inner{
 		margin : 20px 0;
@@ -411,7 +423,7 @@ body{font-family : myFont;}
 	.position{
 		margin-bottom : 10px;
 		font-size     : 22px;
-	}
+	}*/
 
 	/* map */
 	#map .map-title{
