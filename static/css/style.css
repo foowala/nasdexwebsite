@@ -393,37 +393,21 @@ body{font-family : myFont;}
 
 	/* advisor */
 	#advisor .advisor-img{
-		width : 100%;
+		width : 168px;
 	}
 	#advisor .link-img{
-		margin-left : 5px;
+		margin-left : 3px;
 	}
 	#advisor .team-inner{
 		margin : 20px 0;
 	}
 	#advisor .position{
 		font-size     : 18px;
-		margin-bottom : 10px;
-	}
-	/*#advisor .advisor-img{
-		width: 168px;
-	}
-	#advisor .team-inner{
-		margin : 20px 0;
-	}
-	#advisor .position{
-		font-size : 18px;
-	}
-	#advisor .advisor-grid{
-		margin-top : -40px;
-	}
-	#advisor .link-img{
-		margin-left : 5px;
 	}
 	.position{
 		margin-bottom : 10px;
 		font-size     : 22px;
-	}*/
+	}
 
 	/* map */
 	#map .map-title{
