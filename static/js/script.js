@@ -54,3 +54,28 @@
 		}
 	}
 
+	// mobile 公告点击效果
+	$('.head-grid .title').on('click',function(){
+		var title = $('.head-grid .title'),
+			content = $('.head-grid .board-grid .content');
+		title.css({'fontSize':'30px','lineHeight':'60px'});
+		content.css('display','block');
+	})
+	$('.head-grid .board-grid .close-btn').on('click',function() {
+		$('.head-grid .board-grid .content').css('display','none');
+		$('.head-grid .title').css({'fontSize':'16px','lineHeight':'35px'})
+	})
+
+
+	// pc公告点击效果
+	$('.board .title').on('click',function() {
+		var title = $('.board .title')
+		title.css('display','none');
+		$('.board .board-content').css('display','block');
+	})
+	$('.board .close-btn').on('click',function() {
+		var title = $('.board .title')
+		$('.board .board-content').css('display','none');
+		title.css('display','block');
+	})
+

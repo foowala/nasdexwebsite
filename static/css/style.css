@@ -10,10 +10,6 @@ body{font-family : myFont;}
 }
 .head{
 	height           : 80px;
-	position         : fixed;
-	top              : 0;
-	left             : 0;
-	right            : 0;
 	z-index          : 999;
 	padding          : 0 50px;
 	border-bottom    : 1px solid #ccc;
@@ -56,6 +52,14 @@ body{font-family : myFont;}
 	width : 32px;
 }
 
+/* 公告 */
+.board .title{font-size: 16px; text-align: center; background-color: #FC3D39; color: #fff; line-height: 40px;}
+.board .board-content{background-color: #FC3D39; color: #fff; padding: 0 100px; display: none;}
+.board .board-title{font-size: 22px; display: inline-block; line-height: 90px; margin-right: 140px;}
+.board .board-text{font-size: 16px; display: inline-block;}
+.board .board-btn{font-size: 16px; display: inline-block; background-color: #fff; color: #FC3D39; float: right; line-height: 40px; padding: 0 20px; margin-top: 25px;}
+.board .board-btn .btn-icon{width: 25px; margin-left: 15px;margin-top: -5px;}
+.board .close-btn{width: 22px; position: absolute; right: 10px; top: 5px;}
 
 
 .head-grid {display: none; position: fixed; top: 0; left: 0;background-color: #fff; z-index: 999; border-bottom: 1px solid #ccc; width: 100%;}
@@ -72,6 +76,12 @@ body{font-family : myFont;}
 .head-grid .headerFr ul li a:hover,.header .navProduct a:hover{color: #FC3D39;}
 .head-grid .header-img{width: 35px;}
 
+.head-grid .board-grid{background-color: #FC3D39; color: #fff; text-align: center;}
+.head-grid .title{ line-height: 35px; font-size: 16px; background-color: #FC3D39; text-align: center; color: #fff;}
+.head-grid .board-grid .content{font-size: 16px; padding: 0 0 20px 0; display: none;}
+.head-grid .board-grid .board-btn{background-color: #fff; width: 160px; color: #FC3D39; margin: 0 auto; line-height: 36px;}
+.head-grid .board-grid .btn-icon{width: 25px; margin-left: 10px; margin-top: -5px;}
+.head-grid .board-grid .close-btn{width: 22px; position: absolute; top: 5px; right: 5px;}
 
 
 /* banner */
@@ -321,7 +331,11 @@ body{font-family : myFont;}
 	#about,#block,#team,#advisor,#media{
 		padding : 40px 20px; 
 	}
+	
 
+	.board{
+		display: none;
+	}
 	/* banner */
 	.banner{
 		margin-top : 69px;
