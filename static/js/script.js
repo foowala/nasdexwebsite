@@ -68,14 +68,14 @@
 
 
 	// pc公告点击效果
-	$('.board .title').on('click',function() {
-		var title = $('.board .title')
-		title.css('display','none');
-		$('.board .board-content').css('display','block');
-	})
-	$('.board .close-btn').on('click',function() {
-		var title = $('.board .title')
-		$('.board .board-content').css('display','none');
-		title.css('display','block');
-	})
+	// $('.board .title').on('click',function() {
+	// 	var title = $('.board .title')
+	// 	title.css('display','none');
+	// 	$('.board .board-content').css('display','block');
+	// })
+	// $('.board .close-btn').on('click',function() {
+	// 	var title = $('.board .title')
+	// 	$('.board .board-content').css('display','none');
+	// 	title.css('display','block');
+	// })
 
