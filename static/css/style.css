@@ -4,7 +4,9 @@ main {
     font-family: myFont;
     height: 100%
 }
-
+ul,li {
+	list-style: none;
+}
 @font-face {
     font-family: myFont;
     src: url('../fonts/Futura-Book.otf');
@@ -281,6 +283,7 @@ main {
     background: url('../images/banner.jpg') top center no-repeat;
     background-size: cover;
     text-align: center;
+    position: relative;
 }
 
 .banner:after {
@@ -301,6 +304,9 @@ main {
     font-family: myFont;
     font-weight: bold;
     padding: 10px 0;
+}
+.banner .banner-title span {
+	letter-spacing:12px;
 }
 
 .banner .banner-title p.banner-text-grid {
@@ -330,6 +336,41 @@ main {
     border: 4px solid #FC3D39;
     background-color: #FC3D39;
 }
+
+
+.banner .banner_footer_icon {
+	background-color: transparent;
+	/*background-color: transparent;*/
+	padding-top: 65px;
+}
+.banner .banner_footer_icon .container {
+	margin: 0 auto;
+}
+.banner .banner_footer_icon ul {
+	height: 70px;
+	text-align: center;
+  	margin: 0 auto;
+  	padding-left: 50px;
+}
+.banner .banner_footer_icon ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 40px;
+}
+.banner .banner_footer_icon ul li a img {
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.banner .banner_footer_icon ul li:hover a img {
+	width: 50px;
+	height: 50px;
+}
+
+
+
+
 
 .cd-bg-1 .cd-container {
     display: flex;
@@ -444,6 +485,12 @@ main {
 #team .team-img {
     width: 170px;
     height: 170px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+#team .team-img:hover {
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
 }
 
 .link-img {
@@ -479,29 +526,42 @@ main {
     font-size: 12px;
 }
 
-.team-img.billy-img:hover {
+
+/*.team-img.billy-img:hover {
     content: url('../images/Billy-img.jpg');
+   -webkit-filter: grayscale(0); 
+   filter: grayscale(0);
 }
 
 .team-img.charles-img:hover {
     content: url('../images/Charles-img.jpg');
+   -webkit-filter: grayscale(0); 
+   filter: grayscale(0);
 }
 
 .team-img.vince-img:hover {
     content: url('../images/Vince-img.jpg');
+   -webkit-filter: grayscale(0); 
+   filter: grayscale(0);
 }
 
 .team-img.james-img:hover {
     content: url('../images/James-img.jpg');
+   -webkit-filter: grayscale(0);
+   filter: grayscale(0);
 }
 
 .team-img.victor-img:hover {
     content: url('../images/victor-img.jpg');
+   -webkit-filter: grayscale(0); 
+   filter: grayscale(0);
 }
 
 .team-img.anja-img:hover {
     content: url('../images/anja-img.jpeg');
-}
+   -webkit-filter: grayscale(0); 
+   filter: grayscale(0);
+}*/
 
 
 
@@ -513,6 +573,12 @@ main {
 
 #advisor .advisor-img {
     width: 215px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#advisor .advisor-img:hover {
+	-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
 }
 
 #advisor .team-inner {
@@ -523,7 +589,7 @@ main {
     height: 50px;
 }
 
-.advisor-img.WilliamBaoBean-img:hover {
+/*.advisor-img.WilliamBaoBean-img:hover {
     content: url('../images/WilliamBaoBean-img.jpg');
 }
 
@@ -557,7 +623,7 @@ main {
 
 .advisor-img.Eugene-Chew-img:hover {
     content: url('../images/Eugene-Chew-img.png');
-}
+}*/
 
 
 
@@ -639,6 +705,56 @@ main {
 
 
 
+/*顶部弹出容器*/
+#jumbotron {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 1000%;
+	margin-left: -50%;
+	margin-top: -30%;
+	padding: 50px 100px;
+	z-index: 999;
+	background: rgba(0,0,0,0.76);
+	text-align: center;
+}
+#jumbotron h1 {
+	color: #199FD6;
+	font-size: 48px;
+	padding: 30px 0;
+}
+#discription {
+	padding: 0 100px;
+}
+#jumbotron p {
+	display: block;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 40px 0;
+}
+#jumbotron a {
+	display: block;
+	width: 200px;
+	margin-top: 80px;
+	margin: 80px auto 0;
+}
+#jumbotron span {
+	position: absolute;
+	top: 90px;
+	right: 100px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../images/icon/close.png) no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+
+
+
 
 /* 响应 */
 
@@ -695,6 +811,46 @@ main {
         padding: 0;
         text-align: center;
     }
+    
+    /*弹窗容器*/
+   #jumbotron {
+		top: 40%;
+		margin-top: -60%;
+		margin-left: -62%;
+   }
+   #jumbotron h1 {
+		color: #199FD6;
+		font-size: 32px;
+		padding: 0 0;
+	}
+	#discription {
+	  padding: 0;
+	}
+	#jumbotron p {
+		display: block;
+		color: #FFFFFF;
+		font-size: 12px;
+		width: 320px;
+		margin: 0;
+		padding: 10px 0;
+	}
+	#jumbotron a {
+	  display: block;
+	  width: 200px;
+	  margin: 30px auto;
+	}
+	#jumbotron span {
+		display: none;
+		/*position: absolute;
+		top: 20px;
+		right: 40px;
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: url(../images/icon/close.png) no-repeat center;
+		background-size: cover;
+		cursor: pointer;*/
+	}
 	
 
     /* banner */
@@ -726,6 +882,12 @@ main {
         display: block;
         line-height: 40px;
     }
+    .banner .banner_footer_icon ul li {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+	}
 
 
 

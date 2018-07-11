@@ -64,3 +64,16 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
     $('.head-grid .board-grid .content').css('display', 'none');
     $('.head-grid .title').css('display', 'block')
 })
+
+$(function(){
+	// 页面弹窗
+	setInterval();
+})
+// 定时器
+var timer = setInterval(function() {
+	$("#jumbotron").show();
+},1000);
+$("#btn_close,#icon_close").on('click', function(){
+	$("#jumbotron").hide();
+	clearInterval(timer);
+});
