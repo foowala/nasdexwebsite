@@ -67,13 +67,18 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 
 $(function(){
 	// 页面弹窗
-	setInterval();
-})
-// 定时器
-var timer = setInterval(function() {
-	$("#jumbotron").show();
-},1000);
-$("#btn_close,#icon_close").on('click', function(){
-	$("#jumbotron").hide();
-	clearInterval(timer);
+	// setInterval();
 });
+// 定时器
+// var timer = setInterval(function() {
+// 	$(".notice").show();
+// },1000);
+// $(".btn_close,.icon_close").on('click', function(e){
+// 	$(".notice").hide();
+// 	clearInterval(timer);
+// });
+
+// 播放器
+
+
+

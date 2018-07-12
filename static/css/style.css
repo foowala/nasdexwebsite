@@ -368,7 +368,49 @@ ul,li {
 	height: 50px;
 }
 
+/* 弹出层 */
+.banner .notice {
+  display: none;
+  background: rgba(0, 0, 0, 0.78);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.banner .notice div {
+  margin: 10px 0;
+}
+.banner .notice div:last-child {
+  margin-top: 30px;
+}
+.banner .notice h1 {
+  color: #199FD6;
+  font-size: 42px;
+  padding-top: 20px;
+}
+.banner .notice p {
+  color: #FFFFFF;
+  font-size: 14px;
+  display: block;
+  margin:0 auto;
+  padding: 10px 150px;
+}
 
+
+
+
+/* 视频video */
+#video_content {
+  font-size: 0;
+}
+#video_content #my_player {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 
 
@@ -706,337 +748,447 @@ ul,li {
 
 
 /*顶部弹出容器*/
-#jumbotron {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	height: 1000%;
-	margin-left: -50%;
-	margin-top: -30%;
-	padding: 50px 100px;
-	z-index: 999;
-	background: rgba(0,0,0,0.76);
-	text-align: center;
-}
-#jumbotron h1 {
-	color: #199FD6;
-	font-size: 48px;
-	padding: 30px 0;
-}
-#discription {
-	padding: 0 100px;
-}
-#jumbotron p {
-	display: block;
-	color: #FFFFFF;
-	font-size: 14px;
-	margin: 40px 0;
-}
-#jumbotron a {
-	display: block;
-	width: 200px;
-	margin-top: 80px;
-	margin: 80px auto 0;
-}
-#jumbotron span {
-	position: absolute;
-	top: 90px;
-	right: 100px;
-	display: block;
-	width: 50px;
-	height: 50px;
-	background: url(../images/icon/close.png) no-repeat center;
-	background-size: cover;
-	cursor: pointer;
-}
+/*#jumbotron {*/
+	/*display: none;*/
+	/*position: fixed;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*height: 1000%;*/
+	/*margin-left: -50%;*/
+	/*margin-top: -30%;*/
+	/*padding: 50px 100px;*/
+	/*z-index: 999;*/
+	/*background: rgba(0,0,0,0.76);*/
+	/*text-align: center;*/
+/*}*/
+/*#jumbotron h1 {*/
+	/*color: #199FD6;*/
+	/*font-size: 48px;*/
+	/*padding: 30px 0;*/
+/*}*/
+/*#discription {*/
+	/*padding: 0 100px;*/
+/*}*/
+/*#jumbotron p {*/
+	/*display: block;*/
+	/*color: #FFFFFF;*/
+	/*font-size: 14px;*/
+	/*margin: 40px 0;*/
+/*}*/
+/*#jumbotron a {*/
+	/*display: block;*/
+	/*width: 200px;*/
+	/*margin-top: 80px;*/
+	/*margin: 80px auto 0;*/
+/*}*/
+/*#jumbotron span {*/
+	/*position: absolute;*/
+	/*top: 90px;*/
+	/*right: 100px;*/
+	/*display: block;*/
+	/*width: 50px;*/
+	/*height: 50px;*/
+	/*background: url(../images/icon/close.png) no-repeat center;*/
+	/*background-size: cover;*/
+	/*cursor: pointer;*/
+/*}*/
 
 
 
 
 
 
-/* 响应 */
+/* 响应式 */
+  @media screen and (max-width: 768px){
+    .banner .notice {
+      display: none;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.78);
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .banner .notice div {
+      padding: 10px 0;
+    }
+    .banner .notice div:last-child {
+      padding-top: 10px;
+    }
+    .banner .notice h1 {
+      color: #199FD6;
+      font-size: 32px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .banner .notice p {
+      color: #FFFFFF;
+      font-size: 14px;
+      display: block;
+      margin:0 auto;
+      padding: 0;
+    }
+  }
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+  @media only screen and (min-width: 375px) and (max-width: 768px) {
     .rotate-title,
     .puplic-title {
-        display: none;
+      display: none;
     }
+
     .puplic-text {
-        font-size: 16px;
+      font-size: 16px;
     }
+
     .index-title {
-        display: block;
-        font-size: 32px;
-        color: #FC3D39;
-        margin-bottom: 30px;
+      display: block;
+      font-size: 32px;
+      color: #FC3D39;
+      margin-bottom: 30px;
     }
+
     .head {
-        display: none;
+      display: none;
     }
+
     .head-grid {
-        display: block;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
     }
+
     #about,
     #about2,
     #block,
     #team,
     #advisor,
     #media {
-        padding: 40px 20px;
+      padding: 40px 20px;
     }
-    .cd-fixed-bg {
-	    min-height: 100%;
-	    background-size: cover;
-	    background-attachment: inherit;
-	    background-repeat: no-repeat;
-	    background-position: center;
-	}
-	.cd-fixed-bg.cd-bg-1 {
-	    background-image: url("../images/lets-chat.jpg");
-	}
-    .cd-bg-1 .cd-container {
-        padding: 60% 20px;
-    }
-    .banner-2 {
-        font-size: 14px;
-    }
-    .banner-2 .banner-title {
-        font-size: 30px;
-    }
-    .banner-2 .banner-btn a {
-        font-size: 20px;
-        width: 170px;
-        padding: 0;
-        text-align: center;
-    }
-    
-    /*弹窗容器*/
-   #jumbotron {
-		top: 40%;
-		margin-top: -60%;
-		margin-left: -62%;
-   }
-   #jumbotron h1 {
-		color: #199FD6;
-		font-size: 32px;
-		padding: 0 0;
-	}
-	#discription {
-	  padding: 0;
-	}
-	#jumbotron p {
-		display: block;
-		color: #FFFFFF;
-		font-size: 12px;
-		width: 320px;
-		margin: 0;
-		padding: 10px 0;
-	}
-	#jumbotron a {
-	  display: block;
-	  width: 200px;
-	  margin: 30px auto;
-	}
-	#jumbotron span {
-		display: none;
-		/*position: absolute;
-		top: 20px;
-		right: 40px;
-		display: block;
-		width: 30px;
-		height: 30px;
-		background: url(../images/icon/close.png) no-repeat center;
-		background-size: cover;
-		cursor: pointer;*/
-	}
-	
 
+    .cd-fixed-bg {
+      min-height: 100%;
+      background-size: cover;
+      background-attachment: inherit;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .cd-fixed-bg.cd-bg-1 {
+      background-image: url("../images/lets-chat.jpg");
+    }
+
+    .cd-bg-1 .cd-container {
+      padding: 60% 20px;
+    }
+
+    .banner-2 {
+      font-size: 14px;
+    }
+
+    .banner-2 .banner-title {
+      font-size: 30px;
+    }
+
+    .banner-2 .banner-btn a {
+      font-size: 20px;
+      width: 170px;
+      padding: 0;
+      text-align: center;
+    }
+
+    /*弹窗容器*/
+    /*#jumbotron {*/
+    /*top: 40%;*/
+    /*margin-top: -60%;*/
+    /*margin-left: -62%;*/
+    /*}*/
+    /*#jumbotron h1 {*/
+    /*color: #199FD6;*/
+    /*font-size: 32px;*/
+    /*padding: 0 0;*/
+    /*}*/
+    /*#discription {*/
+    /*padding: 0;*/
+    /*}*/
+    /*#jumbotron p {*/
+    /*display: block;*/
+    /*color: #FFFFFF;*/
+    /*font-size: 12px;*/
+    /*width: 320px;*/
+    /*margin: 0;*/
+    /*padding: 10px 0;*/
+    /*}*/
+    /*#jumbotron a {*/
+    /*display: block;*/
+    /*width: 200px;*/
+    /*margin: 30px auto;*/
+    /*}*/
+    /*#jumbotron span {*/
+    /*display: none;*/
+    /*!*position: absolute;*/
+    /*top: 20px;*/
+    /*right: 40px;*/
+    /*display: block;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*background: url(../images/icon/close.png) no-repeat center;*/
+    /*background-size: cover;*/
+    /*cursor: pointer;*!*/
+    /*}*/
     /* banner */
     .banner {
-        margin-top: 69px;
+      margin-top: 69px;
+      text-align: center;
     }
+
     .banner:after {
-        content: '';
-        display: block;
-        padding: 13%;
+      content: '';
+      display: block;
+      padding: 13%;
     }
+
     .banner .banner-title {
-        font-size: 40px;
-        margin: 0 auto;
-        padding-top: 150px;
+      font-size: 40px;
+      margin: 0 auto;
+      padding-top: 150px;
     }
+
     .banner .banner-btn a {
-        margin-top: 60px;
-        font-size: 20px;
-        line-height: 40px;
+      margin-top: 60px;
+      font-size: 20px;
+      line-height: 40px;
     }
+
     .banner .banner-btn .overview {
-        margin-top: 20px;
+      margin-top: 20px;
     }
+
     .banner .banner-title p.banner-text {
-        display: none;
+      display: none;
     }
+
     .banner .banner-title p.banner-text-grid {
-        display: block;
-        line-height: 40px;
+      display: block;
+      line-height: 40px;
     }
+
     .banner .banner_footer_icon ul li {
-		display: inline-block;
-		width: 50px;
-		height: 50px;
-		margin-right: 20px;
-	}
-
-
-
-    /* about */
-    #about .about-img {
-        display: none;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
     }
+
+    .banner .notice {
+      display: none;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.78);
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .banner .notice div {
+      padding: 5px 0;
+    }
+    .banner .notice div:last-child {
+      padding-top: 10px;
+    }
+    .banner .notice h1 {
+      color: #199FD6;
+      font-size: 28px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .banner .notice p {
+      color: #FFFFFF;
+      font-size: 12px;
+      display: block;
+      margin:0 auto;
+      padding: 0;
+    }
+
+
+
+
+
+    #about .about-img {
+      display: none;
+    }
+
     #about .text {
-        font-size: 16px;
+      font-size: 16px;
     }
 
     /* block chain */
     #block {
-        width: 100%;
-        overflow: hidden;
+      width: 100%;
+      overflow: hidden;
     }
+
     #block .block-chain {
-        background: url('../images/block-chain-mobile.png') no-repeat top center;
-        background-size: 100% auto;
+      background: url('../images/block-chain-mobile.png') no-repeat top center;
+      background-size: 100% auto;
     }
+
     #block .block-chain:after {
-        padding: 72%;
+      padding: 72%;
     }
 
     /* team */
     #team .team-img {
-        min-width: 305px;
-        min-height: 305px;
+      min-width: 305px;
+      min-height: 305px;
     }
+
     #team .col-md-11 {
-        text-align: center;
+      text-align: center;
     }
+
     #team .team-item {
-        padding: 0;
+      padding: 0;
     }
+
     #team .name {
-        margin-top: 16px;
-        padding-left: 40px;
+      margin-top: 16px;
+      padding-left: 40px;
     }
+
     #team .item {
-        margin-bottom: 30px;
-        padding: 0 30px;
+      margin-bottom: 30px;
+      padding: 0 30px;
     }
+
     #team .row .introduce {
-        text-align: left;
-        font-size: 14px;
+      text-align: left;
+      font-size: 14px;
     }
 
     /* advisor */
     #advisor .advisor-img {
-        width: 100%;
+      width: 100%;
     }
+
     #advisor .name {
-        font-size: 20px;
+      font-size: 20px;
     }
+
     #advisor .link-img {
-        margin-left: 4px;
+      margin-left: 4px;
     }
+
     #advisor .team-inner {
-        margin: 20px 0;
+      margin: 20px 0;
     }
+
     #advisor .position {
-        font-size: 18px;
+      font-size: 18px;
     }
+
     .position {
-        margin-bottom: 10px;
-        font-size: 22px;
+      margin-bottom: 10px;
+      font-size: 22px;
     }
 
     /* media */
     #media .media-title {
-        font-size: 16px;
-        line-height: 40px;
+      font-size: 16px;
+      line-height: 40px;
     }
+
     #media .media-item {
-        clear: both;
-        width: 100%;
-        margin-bottom: 20px;
+      clear: both;
+      width: 100%;
+      margin-bottom: 20px;
     }
+
     #media .media-img {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
+
     #media .media-logo .logo-img {
-        width: 50px;
+      width: 50px;
     }
 
     /* footer */
     .footer-logo {
-        width: 220px;
+      width: 220px;
     }
+
     .footer p {
-        margin: 20px 0 40px;
+      margin: 20px 0 40px;
     }
+
     .footer .download {
-        font-size: 20px;
-        width: 280px;
+      font-size: 20px;
+      width: 280px;
     }
-}
+  }
 
 
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+  @media only screen and (min-width: 768px) and (max-width: 980px) {
     .head {
-        padding: 0 20px;
+      padding: 0 20px;
     }
+
     .head li {
-        margin: 0 10px;
+      margin: 0 10px;
     }
+
     .rotate-title {
-        display: none;
+      display: none;
     }
+
     .index-title {
-        display: block;
-        font-size: 38px;
-        color: #FC3D39;
-        margin-bottom: 30px;
+      display: block;
+      font-size: 38px;
+      color: #FC3D39;
+      margin-bottom: 30px;
     }
+
     /*our team*/
     #team > .row .col-md-11 .infor {
-    		padding-left: 50px;
+      padding-left: 50px;
     }
+
     #team .team-inner .introduce {
-    		font-size: 16px;
+      font-size: 16px;
     }
+
     #media .media-title {
-        line-height: 30px;
+      line-height: 30px;
     }
-}
+  }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1170px) {
-	
-	/*our team*/
-	#team > .row .col-md-4 {
-		padding: 0 5px;
-	}
-	#team > .row .col-md-8 {
-		padding: 0 0 0 50px;
-	}
-	
-	/*advisor*/
-	#advisor > .row .col-md-11 .col-md-3 {
-		margin: 0 30px;
-	}
-}
+  @media only screen and (min-width: 992px) and (max-width: 1170px) {
 
-@media only screen and (min-width: 1170px) {
-	/*our team*/
-	#team > .row .infor {
-		padding: 0 0 0 50px;
-	}
-}
+    /*our team*/
+    #team > .row .col-md-4 {
+      padding: 0 5px;
+    }
+
+    #team > .row .col-md-8 {
+      padding: 0 0 0 50px;
+    }
+
+    /*advisor*/
+    #advisor > .row .col-md-11 .col-md-3 {
+      margin: 0 30px;
+    }
+  }
+
+  @media only screen and (min-width: 1170px) {
+    /*our team*/
+    #team > .row .infor {
+      padding: 0 0 0 50px;
+    }
+  }
+
+
