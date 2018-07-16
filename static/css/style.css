@@ -42,7 +42,7 @@ ul,li {
 }
 
 .cd-color-2 {
-    background-color: #000;
+    background-color: #fff;
 }
 
 .cd-fixed-bg.cd-bg-2 {
@@ -54,7 +54,7 @@ ul,li {
 }
 
 .cd-fixed-bg.cd-bg-3 {
-    background-image: url("../images/advisors-bg.jpg");
+    background-image: url("../images/advisor0716.jpg");
 }
 
 
@@ -75,7 +75,6 @@ ul,li {
 }
 
 
-
 /* head */
 
 .clearfloat {
@@ -84,11 +83,17 @@ ul,li {
 
 .head {
     height: 80px;
+    width: 100%;
     z-index: 999;
     padding: 0 50px;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    /*border-bottom: 1px solid #ccc;*/
+    border: none;
+    /*opacity: 0;*/
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
 
 .head .nav {
     margin: 0 auto;
@@ -103,13 +108,13 @@ ul,li {
 .head li {
     list-style: none;
     display: inline-block;
-    margin: 0 25px;
-    font-size: 16px;
+    margin: 0 20px;
+    font-size: 14px;
 }
 
 .head a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     line-height: 80px;
 }
 
@@ -179,9 +184,7 @@ ul,li {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
     z-index: 999;
-    border-bottom: 1px solid #ccc;
     width: 100%;
 }
 
@@ -280,9 +283,12 @@ ul,li {
 /* banner */
 
 .banner {
-    background: url('../images/banner.jpg') top center no-repeat;
+    background: url('../images/banner0716.jpg')  no-repeat top center;
     background-size: cover;
     text-align: center;
+    position: relative;
+    width: 100%;
+    height: 1350px;
     position: relative;
 }
 
@@ -366,20 +372,72 @@ ul,li {
 	width: 50px;
 	height: 50px;
 }
+.divide-banner {
+    width: 100%;
+}
+.divide-banner .divide-banner-container {
+    padding: 0 0;
+}
+.divide-banner .divide-banner-div {
+    height: 180px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.divide-banner .divide-banner-div .divide-banner-img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
 
 
 
 
 
 /* 视频video */
-.video {
-  width: 100%;
-  height: auto;
+.banner .video {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    z-index: 99;
+}
+.video .container {
+    height: 100%;
+    margin: 0 auto;
 }
 .video .container video {
-  display: block;
-  margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -340px;
+    z-index: 999;
+
 }
+.banner .video h3 {
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -150px;
+}
+.banner .video .line {
+    display: block;
+    border-top: 4px solid #fff;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
 
 
 
@@ -457,7 +515,7 @@ ul,li {
 
 #about .text p {
     margin-bottom: 25px;
-    color: #fff;
+    color: #000;
 }
 
 #about .about-img {
@@ -490,7 +548,7 @@ ul,li {
 
 #team {
     padding: 50px 100px;
-    background-color: #060404;
+    background-color: #fff;
 }
 
 #team .team-img {
@@ -517,7 +575,7 @@ ul,li {
 .team-item {
     position: relative;
     padding-bottom: 20px;
-    color: #fff;
+    color: #000;
 }
 
 .name {
@@ -613,7 +671,7 @@ ul,li {
 .footer {
     padding: 50px 0;
     text-align: center;
-    background-color: #060404;
+    background: url("../images/footer-banner0716.jpg") no-repeat center;
     color: #fff;
 }
 
@@ -621,18 +679,19 @@ ul,li {
     width: 253px;
 }
 
-.footer p {
-    margin: 20px 0 50px;
-    font-size: 20px;
-}
-
 .footer .download {
+    display: block;
+    width: 476px;
     color: #fff;
     text-decoration: none;
     font-size: 32px;
     border: 2px solid #fff;
-    padding: 10px 42px;
-    margin-bottom: 50px;
+    padding: 20px 40px;
+    margin: 40px auto 40px;
+}
+.footer .download:hover {
+    border-color: #e84140;
+    color: #e84140;
 }
 
 .footer .icon {
@@ -790,11 +849,6 @@ ul,li {
     margin: 30px auto
   }
 
-  .modal-content {
-    /*-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);*/
-    /*box-shadow: 0 5px 15px rgba(0, 0, 0, .5)*/
-  }
-
   .modal-sm {
     width: 300px
   }
@@ -813,18 +867,7 @@ ul,li {
 
 
 
-/* 响应式 */
-
-  @media screen and (max-width: 768px) {
-      .video .container {
-          width: 100%;
-      }
-      .video .container video {
-          display: block;
-          margin: 0 auto;
-          width: 100%;
-      }
-  }
+/* 响应式 移动端*/
 
   @media only screen and (min-width: 375px) and (max-width: 768px) {
     .rotate-title,
@@ -842,10 +885,14 @@ ul,li {
       color: #FC3D39;
       margin-bottom: 30px;
     }
+    main {
+        position: relative;
+    }
 
     .head {
       display: none;
     }
+
 
     .head-grid {
       display: block;
@@ -853,9 +900,31 @@ ul,li {
       top: 0;
       left: 0;
       z-index: 999;
+        background: #fff;
+    }
+  .head-grid .navbtn .logo {
+      height: 100%;
+  }
+
+      .banner .video .container {
+          position: relative;
+      }
+
+      .banner .video .container h3 {
+          display: none;
+      }
+      .banner .video .container .line {
+          display: none;
+      }
+
+    .banner .video .container video {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    #about,
+      #about,
     #about2,
     #block,
     #team,
@@ -879,6 +948,9 @@ ul,li {
     .cd-bg-1 .cd-container {
       padding: 60% 20px;
     }
+      .cd-bg-2 {
+          width: 100%;
+      }
 
     .banner-2 {
       font-size: 14px;
@@ -893,14 +965,16 @@ ul,li {
       width: 170px;
       padding: 0;
       text-align: center;
-    }
-
+    }  
+      .cd-fixed-bg.cd-bg-3 {
+          background: #ffffff;
+      }
 
 
 
     /* banner */
     .banner {
-      margin-top: 69px;
+      margin-top: 68px;
       text-align: center;
     }
 
@@ -943,6 +1017,27 @@ ul,li {
     }
 
 
+
+      .divide-banner {
+          width: 100%;
+          height: 75px;
+      }
+      .divide-banner .divide-banner-container {
+          height: 100%;
+      }
+      .divide-banner .divide-banner-container .row {
+          height: 100%;
+      }
+      .divide-banner .divide-banner-container .divide-banner-div {
+          height: 75px;
+          position: relative;
+          margin: 0 auto;
+      }
+      .divide-banner .divide-banner-container .divide-banner-div img {
+          position: absolute;
+          top: -25%;
+          left: 0;
+      }
 
 
 
@@ -999,6 +1094,7 @@ ul,li {
     }
 
     /* advisor */
+
     #advisor .advisor-img {
       width: 100%;
     }
@@ -1120,4 +1216,14 @@ ul,li {
     }
   }
 
+    @media screen and (max-width: 768px) {
+        .video .container {
+            width: 100%;
+        }
+        .video .container video {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
 
+    }

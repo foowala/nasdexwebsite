@@ -68,6 +68,30 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 $(function(){
 	// 页面弹窗
 	// setInterval();
+  $(window).scroll(function() {
+      if ($(document).scrollTop() >= 100) {
+          $(".head").css({"background":"#fff","width":"100%"});
+          $(".head a").css({"color":"#000"});
+          $(".head li a").hover(function() {
+            $(this).css({"color":"#e84140"});
+          },function() {
+            $(this).css({"color":"#000"});
+          });
+          $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
+          $(".header-img").attr("src","static/images/icon/email-black.png");
+      } else {
+          $(".head").css({"background": "none"});
+        $(".head a").css({"color":"#fff"});
+        $(".head li a").hover(function() {
+          $(this).css({"color":"#e84140"});
+        },function() {
+          $(this).css({"color":"#fff"});
+        });
+        $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
+        $(".header-img").attr("src","static/images/icon/email-white.png")
+      }
+
+  })
 });
 
 // 定时器
@@ -93,6 +117,9 @@ $(function(){
 //   // 阻止事件冒泡，点击弹窗本身时不隐藏
 //   e.stopPropagation();
 // });
+
+
+
 
 
 
