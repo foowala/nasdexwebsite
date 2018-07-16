@@ -21,6 +21,26 @@
 </head>
 
 <body>
+  <!--bootstrap模态框-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon_close"></span></button>
+          <h4 class="modal-title text-center" id="myModalLabel">Important Statement:</h4>
+        </div>
+        <div class="modal-body">
+          <p>DREP Foundation does not have any official community channels other than on Telegram and KakaoTalk. The links to join these official channels are available on our website. Our admins and team members will NEVER offer or accept any contributions in any form. Whenever in doubt, clarify with the admins on our official channels and help keep our community safe!</p>
+          <p>DREP 재단은 공식 사이트에 기재 되어 있는 텔레그램 및 카카오톡을 제외한 어떤 종류의 공식 커뮤니티를 운영하고 있지 않습니다. 모든 공식 그룹내 관리자들은 여러분께 ETH 혹은 기타 금전을 요구하지 않습니다. 질문이 있으시다면, 해당 그룹내 관리자를 통해 확인을 부탁드리며, 혹시 기타 문제가 있을 경우 info@dropchain.com로 메일을 보내주시기 바랍니다. 감사합니다.</p>
+          <p>DREP基金会官方声明：除官网列出的telegram community、announcement和kakao的三个社群外，DREP并没有任何其他的官方社群。DREP不会以官方或成员个人名义向大家征集ETH或其他资金。如有任何问题，可咨询社群管理员或发送邮件至：info@dropchain.com，我们将第一时间回复您，谢谢！</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-lg btn_close" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 网站主体 -->
   <main>
     <div class="head clearfloat">
       <img src="static/images/logo/logo.png" class="logo-img" alt="logo" />
@@ -81,39 +101,15 @@
 	      	</ul>
       	</div>
       </div>
-      	<!--弹出页-->
-      <div class="container notice">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1>Important Statement:</h1>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p>DREP Foundation does not have any official community channels other than on Telegram and KakaoTalk. The links to join these official channels are available on our website. Our admins and team members will NEVER offer or accept any contributions in any form. Whenever in doubt, clarify with the admins on our official channels and help keep our community safe!</p>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p>DREP 재단은 공식 사이트에 기재 되어 있는 텔레그램 및 카카오톡을 제외한 어떤 종류의 공식 커뮤니티를 운영하고 있지 않습니다. 모든 공식 그룹내 관리자들은 여러분께 ETH 혹은 기타 금전을 요구하지 않습니다. 질문이 있으시다면, 해당 그룹내 관리자를 통해 확인을 부탁드리며, 혹시 기타 문제가 있을 경우 info@dropchain.com로 메일을 보내주시기 바랍니다. 감사합니다.</p>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p>DREP基金会官方声明：除官网列出的telegram community、announcement和kakao的三个社群外，DREP并没有任何其他的官方社群。DREP不会以官方或成员个人名义向大家征集ETH或其他资金。如有任何问题，可咨询社群管理员或发送邮件至：info@dropchain.com，我们将第一时间回复您，谢谢！</p>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <a href="javascript:;" class="btn btn-primary btn-lg btn_close">GET IT</a>
-          </div>
-        </div>
-        <!--<span id="icon_close"></span>-->
-      </div>
     </div>
     <!-- END: BANNER -->
 
     <!--视频播放-->
-    <!--<section>-->
-      <!--<div class="container" id="video_content">-->
-        <!--<video id="my_player" preload="auto" controls poster="static/images/icon/video.jpg">-->
-          <!--<source src="static/video/1531118150892465.mp4" type="video/mp4">-->
-          <!--你的浏览器不支持H5播放器-->
-        <!--</video>-->
-      <!--</div>-->
-    <!--</section>-->
+    <section class="video">
+      <div class="container">
+        <video src="static/video/1531118150892465.mp4" preload="auto" controls type="video/mp4" poster="static/video/video.jpg">您的浏览器不支持H5</video>
+      </div>
+    </section>
 
     <div class="cd-fixed-bg cd-bg-1">
       <div class="cd-container">
@@ -450,6 +446,7 @@
     
   </main>
   <script type="text/javascript" src="static/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/modernizr.js"></script>
   <script type="text/javascript" src="static/js/main.js"></script>
   <script type="text/javascript" src="static/js/script.js"></script>

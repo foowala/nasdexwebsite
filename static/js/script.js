@@ -67,18 +67,32 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 
 $(function(){
 	// 页面弹窗
-	// setInterval();
+	setInterval();
 });
+
 // 定时器
 // var timer = setInterval(function() {
 // 	$(".notice").show();
-// },1000);
-// $(".btn_close,.icon_close").on('click', function(e){
-// 	$(".notice").hide();
-// 	clearInterval(timer);
-// });
+// },1500);
+function modelBox() {
+  $('#myModal').modal('show');
+}
 
-// 播放器
+var timer = setInterval(modelBox,1000);
+// 点击按钮后关闭弹出窗口，关闭定时器
+$(".close, .btn_close").on('click', function(){
+  $('#myModal').modal('hide');
+  clearInterval(timer);
+});
+// 实现点击除弹出容器的其它任何地方都可以关闭弹窗
+$(document).click(function() {
+  $('#myModal').modal('hide');
+  clearInterval(timer);
+});
+$(".modal-content").click(function(e) {
+  // 阻止事件冒泡，点击弹窗本身时不隐藏
+  e.stopPropagation();
+});
 
 
 
