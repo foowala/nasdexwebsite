@@ -68,6 +68,7 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 $(function(){
 	// 页面弹窗
 	// setInterval();
+
   $(window).scroll(function() {
       if ($(document).scrollTop() >= 100) {
           $(".head").css({"background":"#fff","width":"100%"});
@@ -90,18 +91,24 @@ $(function(){
         $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
         $(".header-img").attr("src","static/images/icon/email-white.png")
       }
-
   })
+
 });
 
 // 定时器
 // var timer = setInterval(function() {
 // 	$(".notice").show();
 // },1500);
+
+
+
+
+
+
 // function modelBox() {
 //   $('#myModal').modal('show');
 // }
-//
+
 // var timer = setInterval(modelBox,1000);
 // // 点击按钮后关闭弹出窗口，关闭定时器
 // $(".close, .btn_close").on('click', function(){
@@ -117,10 +124,6 @@ $(function(){
 //   // 阻止事件冒泡，点击弹窗本身时不隐藏
 //   e.stopPropagation();
 // });
-
-
-
-
 
 
 

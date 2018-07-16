@@ -5,9 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/static/images/logo/logo-white.png" afterPath="$PROJECT_DIR$/static/images/logo/logo-white.png" />
       <change beforePath="$PROJECT_DIR$/static/js/script.js" afterPath="$PROJECT_DIR$/static/js/script.js" />
       <change beforePath="$PROJECT_DIR$/static/video/video.jpg" afterPath="" />
+=======
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" afterPath="$PROJECT_DIR$/static/js/script.js" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +28,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="414">
               <caret line="428" column="58" lean-forward="true" selection-start-line="428" selection-start-column="58" selection-end-line="428" selection-end-column="58" />
+=======
+            <state relative-caret-position="264">
+              <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
               <folding />
             </state>
           </provider>
@@ -34,8 +43,13 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="300">
               <caret line="958" column="29" lean-forward="true" selection-start-line="958" selection-start-column="29" selection-end-line="958" selection-end-column="29" />
+=======
+            <state relative-caret-position="173">
+              <caret line="375" column="14" lean-forward="true" selection-start-line="375" selection-start-column="14" selection-end-line="375" selection-end-column="14" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
               <folding />
             </state>
           </provider>
@@ -44,10 +58,17 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="470">
               <caret line="89" column="62" lean-forward="false" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
               <folding>
                 <marker date="1531741317000" expanded="true" signature="725:736" ph="..." />
+=======
+            <state relative-caret-position="218">
+              <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+              <folding>
+                <marker date="1531466296000" expanded="true" signature="725:736" ph="..." />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
               </folding>
             </state>
           </provider>
@@ -69,6 +90,7 @@
       <find>notice</find>
       <find>icon_close</find>
       <find>video_content</find>
+<<<<<<< HEAD
       <find>WHITEPAPER</find>
       <find>overview</find>
       <find>nav</find>
@@ -80,6 +102,8 @@
       <find>banner</find>
       <find>header</find>
       <find>logo-img</find>
+=======
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,6 +179,15 @@
               <item name="foowalaico" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="foowalaico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foowalaico" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
           </expand>
           <select />
         </subPane>
@@ -162,7 +195,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -170,11 +203,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/video" />
       <recent name="$PROJECT_DIR$/static/images/icon" />
       <recent name="$PROJECT_DIR$/static/images/logo" />
       <recent name="$PROJECT_DIR$/static/pdf" />
+=======
+      <recent name="$PROJECT_DIR$/static/video" />
+      <recent name="$PROJECT_DIR$/static/images/icon" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,14 +245,22 @@
       <workItem from="1531300030233" duration="67000" />
       <workItem from="1531300113794" duration="503000" />
       <workItem from="1531321907825" duration="24685000" />
+<<<<<<< HEAD
       <workItem from="1531400449051" duration="14346000" />
       <workItem from="1531704197961" duration="3587000" />
       <workItem from="1531725396399" duration="17818000" />
+=======
+      <workItem from="1531400449051" duration="13600000" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="61006000" />
+=======
+    <option name="totallyTimeSpent" value="38855000" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="23" width="1222" height="757" extended-state="0" />
@@ -252,12 +300,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1620">
+          <caret line="108" column="20" lean-forward="true" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12345">
@@ -277,14 +326,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
+=======
+    <entry file="file://$PROJECT_DIR$/static/js/script.js">
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1200">
+          <caret line="80" column="6" lean-forward="true" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding>
+            <marker date="1531466296000" expanded="true" signature="725:736" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11970">
+          <caret line="798" column="0" lean-forward="true" selection-start-line="798" selection-start-column="0" selection-end-line="798" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+=======
+    <entry file="file://$PROJECT_DIR$/index.html">
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5625">
           <caret line="375" column="14" lean-forward="false" selection-start-line="375" selection-start-column="14" selection-end-line="375" selection-end-column="14" />
@@ -310,6 +376,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/static/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -328,6 +395,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -336,6 +405,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -344,6 +414,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
     <entry file="file://$PROJECT_DIR$/static/css/video-js.css" />
     <entry file="file://$PROJECT_DIR$/static/js/video.min.js" />
     <entry file="file://$PROJECT_DIR$/static/images/icon/plan.png">
@@ -366,6 +438,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/static/images/icon/close.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -392,32 +465,60 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/banner0716.jpg">
+=======
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="3348" lean-forward="true" selection-start-line="4" selection-start-column="3348" selection-end-line="4" selection-end-column="3348" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/icon/close.png">
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="470">
           <caret line="89" column="62" lean-forward="false" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="62" />
           <folding>
             <marker date="1531741317000" expanded="true" signature="725:736" ph="..." />
+=======
+        <state relative-caret-position="218">
+          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <marker date="1531466296000" expanded="true" signature="725:736" ph="..." />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="300">
           <caret line="958" column="29" lean-forward="true" selection-start-line="958" selection-start-column="29" selection-end-line="958" selection-end-column="29" />
+=======
+        <state relative-caret-position="173">
+          <caret line="375" column="14" lean-forward="true" selection-start-line="375" selection-start-column="14" selection-end-line="375" selection-end-column="14" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="414">
           <caret line="428" column="58" lean-forward="true" selection-start-line="428" selection-start-column="58" selection-end-line="428" selection-end-column="58" />
+=======
+        <state relative-caret-position="264">
+          <caret line="101" column="14" lean-forward="true" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+>>>>>>> 8495f59295e5a19b7627aef2f20885c01c57ae4d
           <folding />
         </state>
       </provider>
