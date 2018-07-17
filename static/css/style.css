@@ -77,6 +77,10 @@ ul,li {
     clear: both;
 }
 
+/*main {*/
+  /*position: relative;*/
+/*}*/
+
 .head {
     height: 80px;
     width: 100%;
@@ -277,7 +281,7 @@ ul,li {
 /* banner */
 
 .banner {
-    background: url('../images/banner0716.jpg')  no-repeat top center;
+    background: url('../images/banner717.jpg')  no-repeat top center;
     background-size: cover;
     text-align: center;
     position: relative;
@@ -361,10 +365,10 @@ ul,li {
 	display: block;
 	width: 40px;
 	height: 40px;
+    transition: all 1s;
 }
 .banner .banner_footer_icon ul li:hover a img {
-	width: 50px;
-	height: 50px;
+    transform: scale(1.4);
 }
 
 .divide-banner {
@@ -403,10 +407,10 @@ ul,li {
     left: 0;
     z-index: 99;
 }
-.video .container {
-    height: 100%;
-    margin: 0 auto;
-}
+/*.video .container {*/
+    /*height: 100%;*/
+    /*margin: 0 auto;*/
+/*}*/
 .video .container video {
     height: 100%;
     position: absolute;
@@ -620,7 +624,62 @@ ul,li {
 }
 
 
+/*  networks */
+.networks {
+    padding: 50px 0;
+    margin: 0 0;
+}
 
+.networks .title {
+    height: 100%;
+}
+.networks .title h3 {
+    font-size: 42px;
+    color: #e84140;
+    transform: rotate(90deg);
+    padding: 0 20px;
+    border-left: 4px solid #FC3D39;
+    line-height: 37px;
+    position: relative;
+    top: 145px;
+    left: 0;
+    display: inline-block;
+}
+.networks .icon-content {
+    width: 100%;
+    padding-left: 13%;
+}
+.networks p {
+    font-family: myFont;
+    font-size: 18px;
+    text-align: center;
+    height: 43px;
+    display: block;
+    width: 90%;
+  margin-bottom: 30px;
+  padding: 0 35px;
+}
+.networks .icon-pc {
+    width: 100%;
+    padding: 0;
+}
+.networks .icon-pc .icon {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0;
+}
+.networks .icon-pc .icon li {
+    float: left;
+    padding: 0 75px;
+    width: 20%;
+    display: inline-block;
+}
+
+.networks .icon-pc .icon li img {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
 
 
 /* media */
@@ -863,9 +922,22 @@ ul,li {
 
 
 
+
+
+
+
+
+
+
 /* 响应式 移动端*/
 
   @media only screen and (min-width: 375px) and (max-width: 768px) {
+
+    .row{margin:0;}
+    .col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{padding:0;}
+    /* Fuck 15px for iPhone Over */
+
+
     .rotate-title,
     .puplic-title {
       display: none;
@@ -881,7 +953,10 @@ ul,li {
       color: #FC3D39;
       margin-bottom: 30px;
     }
+    html,
+    body,
     main {
+      width: 100%;
         position: relative;
     }
 
@@ -898,26 +973,28 @@ ul,li {
       z-index: 999;
         background: #fff;
     }
+
   .head-grid .navbtn .logo {
       height: 100%;
   }
 
-      .banner .video .container {
-          position: relative;
+      .head-grid .headerFr {
+          border-bottom: 1px solid #e4e4e4;
       }
 
-      .banner .video .container h3 {
-          display: none;
-      }
-      .banner .video .container .line {
-          display: none;
-      }
 
-    .banner .video .container video {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+
+    .video-mobile {
+      width: 100%;
+    }
+    .video-mobile .container {
+      height: 100%;
+      padding: 0;
+    }
+    .video-mobile .container video {
+      width: 100%;
+      height: 100%;
+      position: static;
     }
 
       #about,
@@ -970,9 +1047,12 @@ ul,li {
 
 
     /* banner */
+
     .banner {
-      margin-top: 68px;
+      background: url(../images/banner/bannerMobile.jpg) repeat-x top center;
       text-align: center;
+      height: 480px;
+      margin-top: 30px;
     }
 
     .banner:after {
@@ -984,19 +1064,34 @@ ul,li {
     .banner .banner-title {
       font-size: 40px;
       margin: 0 auto;
-      padding-top: 150px;
+      padding-top: 80px;
+    }
+    .banner .banner-btn {
+      height: 40px;
+      width: 170px;
     }
 
     .banner .banner-btn a {
-      margin-top: 60px;
       font-size: 20px;
-      line-height: 40px;
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 35px;
+      padding: 0;
+      margin: 0 auto;
+      vertical-align: middle;
     }
 
     .banner .banner-btn .overview {
       margin-top: 20px;
     }
 
+    .banner .banner-title p:first-child {
+      margin-bottom: 0;
+    }
+    .banner .banner-title span {
+      font-size: 40px;
+    }
     .banner .banner-title p.banner-text {
       display: none;
     }
@@ -1004,6 +1099,11 @@ ul,li {
     .banner .banner-title p.banner-text-grid {
       display: block;
       line-height: 40px;
+      padding: 10px 0;
+    }
+
+    .banner .banner_footer_icon {
+      padding-top: 30px;
     }
 
     .banner .banner_footer_icon ul li {
@@ -1116,6 +1216,63 @@ ul,li {
       font-size: 22px;
     }
 
+
+
+      .networks {
+          padding: 40px 0 0 0;
+          margin: 0 0;
+      }
+
+      .networks .title {
+          height: 100%;
+      }
+      .networks .title h3 {
+          font-size: 32px;
+          color: #e84140;
+          transform: rotate(0deg);
+          padding-left: 20px;
+          border-left: none;
+          line-height: 37px;
+          position: relative;
+          top: 0;
+          left: 0;
+          display: inline-block;
+      }
+
+      .networks .icon-content {
+        padding-left: 0;
+      }
+      .networks p {
+          font-family: myFont;
+          font-size: 14px;
+          text-align: center;
+          height: 43px;
+          display: block;
+          width: 90%;
+      }
+      .networks .iconMobil {
+          padding: 0;
+      }
+      .networks .iconMobil ul {
+          padding-left: 30px;
+      }
+      .networks .iconMobil ul li {
+          height: 100%;
+          width: 40%;
+          display: inline-block;
+          margin: 20px 10px;
+          padding: 0;
+          vertical-align: middle;
+          text-align: center;
+      }
+      .networks .iconMobil ul li img {
+          max-width: 60%;
+          vertical-align: middle;
+      }
+
+
+
+
     /* media */
     #media .media-title {
       font-size: 16px;
@@ -1148,7 +1305,7 @@ ul,li {
 
     .footer .download {
       font-size: 20px;
-      width: 280px;
+      width: 330px;
     }
   }
 
@@ -1185,6 +1342,19 @@ ul,li {
     #media .media-title {
       line-height: 30px;
     }
+
+      .networks .title h3 {
+          font-size: 32px;
+          color: #e84140;
+          transform: rotate(0deg);
+          padding-left: 20px;
+          border-left: none;
+          line-height: 37px;
+          position: relative;
+          top: -10px;
+          left: 0;
+          display: inline-block;
+      }
   }
 
 

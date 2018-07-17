@@ -66,11 +66,15 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 })
 
 $(function(){
+
+
 	// 页面弹窗
 	// setInterval();
 
-  $(window).scroll(function() {
-      if ($(document).scrollTop() >= 100) {
+  $(document).scroll(function() {
+      var height = $(document).scrollTop();
+      console.log(height);
+      if (height >= 150) {
           $(".head").css({"background":"#fff","width":"100%"});
           $(".head a").css({"color":"#000"});
           $(".head li a").hover(function() {
@@ -80,16 +84,22 @@ $(function(){
           });
           $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
           $(".header-img").attr("src","static/images/icon/email-black.png");
+          $(".head").css({"border-bottom":"1px solid #e4e4e4"});
       } else {
-          $(".head").css({"background": "none"});
+        $(".head").css({"background": "none"});
         $(".head a").css({"color":"#fff"});
         $(".head li a").hover(function() {
           $(this).css({"color":"#e84140"});
         },function() {
           $(this).css({"color":"#fff"});
         });
-        $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
-        $(".header-img").attr("src","static/images/icon/email-white.png")
+        $(".header-img").attr("src","static/images/icon/email-white.png");
+        $(".logo-img").attr("src","static/images/logo/logo-white0716.png");
+        $(".head").css({"border-bottom":"none"});
+        var width = $(document).width();
+        if (width <768) {
+          $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
+        }
       }
   })
 
