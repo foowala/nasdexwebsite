@@ -586,7 +586,7 @@ ul,li {
 }
 .food-supply .food-supply-content .content-right img {
     /*max-width: 90%;*/
-    max-width: 90%;
+    max-width: 80%;
 }
 
 
@@ -623,7 +623,7 @@ ul,li {
 }
 
 .dropchain-explain .dropchain-content .content-left img {
-    max-width: 100%;
+    max-width: 80%;
 }
 .dropchain-explain .dropchain-content .content-right {
     width: 50%;
