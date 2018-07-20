@@ -515,7 +515,7 @@ ul,li {
 
 .food-supply {
     width: 100%;
-    height: 550px;
+    height: 540px;
     margin: 30px auto;
 }
 .food-supply .container {
@@ -525,16 +525,20 @@ ul,li {
     padding: 0 100px;
 }
 .food-supply .title {
+    width: 100%;
     margin-bottom: 40px;
+    border-left: 4px solid #e84140;
 }
 .food-supply .title h3 {
     font-size: 42px;
     font-family: myFont;
     color: #e84140;
+    padding-left: 20px;
 }
 .food-supply .food-supply-content {
     height: 100%;
-    padding-left: 60px;
+    width: 100%;
+    position: relative;
 }
 .food-supply .food-supply-content .des {
     font-size: 20px;
@@ -544,21 +548,26 @@ ul,li {
 .food-supply .food-supply-content .content-left {
     width: 50%;
     margin-top: 20px;
+    padding-left: 0;
 }
 
 .food-supply .food-supply-content .content-left .content-row {
     width: 100%;
     margin-bottom: 40px;
+    position: relative;
 }
 .food-supply .food-supply-content .content-left .content-row img {
     display: block;
-    max-width: 10%;
+    max-width: 9%;
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
 .food-supply .food-supply-content .content-left .content-row h5 {
     display: inline-block;
     font-family: myFont;
     font-size: 18px;
-    margin-left: 20px;
+    padding-left: 68px;
 }
 .food-supply .food-supply-content .content-left .content-row p {
     margin-left: 68px;
@@ -567,12 +576,17 @@ ul,li {
     color: #a1a1a1;
 }
 .food-supply .food-supply-content .content-right {
-    float: right;
+    /*float: right;*/
     width: 50%;
-    padding-left: 200px;
+    height: 100%;
+    padding-left: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .food-supply .food-supply-content .content-right img {
-    max-width: 110%;
+    /*max-width: 90%;*/
+    max-width: 90%;
 }
 
 
@@ -581,14 +595,20 @@ ul,li {
     height: 550px;
     margin: 20px auto;
 }
-
-.dropchain-explain .title {
-    margin-left: 70px;
+.dropchain-explain .container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 100px;
+}
+.dropchain-explain .container .title {
+    border-left: 4px solid #e84140;
 }
 .dropchain-explain .title h3 {
     font-size: 42px;
     font-family: myFont;
     color: #e84140;
+    padding-left: 20px;
 }
 
 .dropchain-explain .dropchain-content {
@@ -599,12 +619,10 @@ ul,li {
 
 .dropchain-explain .dropchain-content .content-left {
     width: 50%;
-    padding: 0 90px;
+    padding: 0 90px 0 0;
 }
 
 .dropchain-explain .dropchain-content .content-left img {
-    /*width: 420px;*/
-    /*height: 385px;*/
     max-width: 100%;
 }
 .dropchain-explain .dropchain-content .content-right {
@@ -771,6 +789,9 @@ ul,li {
     height: 500px;
     /*background: pink;*/
     position: relative;
+    padding: 0 100px;
+    margin: 0;
+    width: 100%;
 }
 .networks-container .networks-left {
     position: absolute;
@@ -803,9 +824,9 @@ ul,li {
 }
 .networks-container .networks-right .networks-right-body ul {
     height: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
     font-size: 0;
+    margin-left: 30px;
+    padding-left: 0;
 }
 .networks-container .networks-right .networks-right-body ul li {
     display: inline-block;
@@ -817,9 +838,17 @@ ul,li {
 .networks-container .networks-right .networks-right-body ul li:last-child {
     float: left;
 }
+.networks-container .networks-right .networks-right-body ul li:nth-child(4) img {
+    display: block;
+    max-width: 70%;
+}
+.networks-container .networks-right .networks-right-body ul li:nth-child(5) img {
+    display: block;
+    max-width: 70%;
+}
 .networks-container .networks-right .networks-right-body ul li:last-child img {
     display: block;
-    max-width: 90%;
+    max-width: 70%;
 }
 .networks-container .networks-right .networks-right-body ul li img {
     display: block;
