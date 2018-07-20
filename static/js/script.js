@@ -66,11 +66,7 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 })
 
 $(function(){
-
-
-	// 页面弹窗
-	// setInterval();
-
+  $(".container-fluid").width($(".container-fluid").width()-30);
   $(document).scroll(function() {
       var height = $(document).scrollTop();
       console.log(height);
@@ -105,35 +101,31 @@ $(function(){
 
 });
 
-// 定时器
-// var timer = setInterval(function() {
-// 	$(".notice").show();
-// },1500);
 
 
+function modelBox() {
+  $('#myModal').modal('show');
 
+}
 
+var timer = setInterval(modelBox,1500);
 
+// 点击按钮后关闭弹出窗口，关闭定时器
+$(".close, .btn_close").on('click', function(){
+  $('#myModal').modal('hide');
+  clearInterval(timer);
+});
 
-// function modelBox() {
-//   $('#myModal').modal('show');
-// }
+// 实现点击除弹出容器的其它任何地方都可以关闭弹窗
+$(document).click(function() {
+  $('#myModal').modal('hide');
+  clearInterval(timer);
+});
 
-// var timer = setInterval(modelBox,1000);
-// // 点击按钮后关闭弹出窗口，关闭定时器
-// $(".close, .btn_close").on('click', function(){
-//   $('#myModal').modal('hide');
-//   clearInterval(timer);
-// });
-// // 实现点击除弹出容器的其它任何地方都可以关闭弹窗
-// $(document).click(function() {
-//   $('#myModal').modal('hide');
-//   clearInterval(timer);
-// });
-// $(".modal-content").click(function(e) {
-//   // 阻止事件冒泡，点击弹窗本身时不隐藏
-//   e.stopPropagation();
-// });
+$(".modal-content").click(function(e) {
+  // 阻止事件冒泡，点击弹窗本身时不隐藏
+  e.stopPropagation();
+});
 
 
 
