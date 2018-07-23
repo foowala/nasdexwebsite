@@ -59,17 +59,16 @@ $('.head-grid .title').on('click', function() {
     content = $('.head-grid .board-grid .content');
     title.css('display', 'none');
     content.css('display', 'block');
-})
+});
 $('.head-grid .board-grid .close-btn').on('click', function() {
     $('.head-grid .board-grid .content').css('display', 'none');
-    $('.head-grid .title').css('display', 'block')
-})
+    $('.head-grid .title').css('display', 'block');
+});
 
 $(function(){
-  $(".container-fluid").width($(".container-fluid").width()-30);
+  // 页面滚动时变化
   $(document).scroll(function() {
       var height = $(document).scrollTop();
-      console.log(height);
       if (height >= 150) {
           $(".head").css({"background":"#fff","width":"100%"});
           $(".head a").css({"color":"#000"});
@@ -98,6 +97,7 @@ $(function(){
         }
       }
   })
+
 
 });
 
@@ -128,5 +128,49 @@ $(".modal-content").click(function(e) {
 });
 
 
+// pc端 点击顶部导航，跳转到指定位置
+var arrPC = ["#about","#block","#team","#advisor","#networks","#media"];
+$(".nav ul li").each(function (index,element) {
+  $(this).click(function () {
+    var scroll_offset = $(arrPC[index]).offset();
+    console.log(scroll_offset);
+    var scroll;
+    if (index === 0) {
+      scroll = scroll_offset.top-110;
+      $("body,html").animate({
+        scrollTop: scroll
+      },1000);
+      return false;
+    }
+    scroll = scroll_offset.top - 79;
+    $("body,html").animate({
+      scrollTop:scroll
+    },1000);
+    return false;
+  });
+});
+
+
+
+// 手机端 点击跳转
+var arrMobil = ["#about2","#block","#team","#advisor","#networks","#media"];
+$(".headerFr ul li").each(function (index,element) {
+  $(this).click(function () {
+    var scroll_offset = $(arrMobil[index]).offset();
+    console.log(scroll_offset);
+    var scroll;
+    if (index === 0) {
+      $("body,html").animate({
+        scrollTop: "190px"
+      },1000);
+      return false;
+    }
+    scroll = scroll_offset.top - 68;
+    $("body,html").animate({
+      scrollTop:scroll
+    },1000);
+    return false;
+  })
+});
 
 

@@ -1,12 +1,16 @@
+/* 需要在 bootstrap.css 之后调用 */
+/* 15px for iPhone Start */
 .row{margin:0;}
 .col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{padding:0;}
-/* Fuck 15px for iPhone Over */
+/* 15px for iPhone Over */
 
 body,
 html,
 main {
     font-family: myFont;
-    height: 100%
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 ul,li {
 	list-style: none;
@@ -119,6 +123,7 @@ ul,li {
     text-decoration: none;
     color: #fff;
     line-height: 80px;
+    cursor: pointer;
 }
 
 .head li a:hover {
@@ -240,46 +245,11 @@ ul,li {
     width: 35px;
 }
 
-.head-grid .board-grid {
-    background-color: #FC3D39;
-    color: #fff;
-    text-align: center;
-}
 
-.head-grid .title {
-    line-height: 35px;
-    font-size: 16px;
-    background-color: #FC3D39;
-    text-align: center;
-    color: #fff;
-}
 
-.head-grid .board-grid .content {
-    font-size: 16px;
-    padding: 0 0 20px 0;
-    display: none;
-}
 
-.head-grid .board-grid .board-btn {
-    background-color: #fff;
-    width: 160px;
-    color: #FC3D39;
-    margin: 0 auto;
-    line-height: 36px;
-}
 
-.head-grid .board-grid .btn-icon {
-    width: 25px;
-    margin-left: 10px;
-    margin-top: -5px;
-}
 
-.head-grid .board-grid .close-btn {
-    width: 22px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
 
 
 
@@ -292,7 +262,6 @@ ul,li {
     position: relative;
     width: 100%;
     height: 1350px;
-    position: relative;
 }
 
 .banner:after {
@@ -468,11 +437,9 @@ ul,li {
 }
 
 
-
-
 .cd-bg-1 .cd-container {
     display: flex;
-    padding: 150px 100px;
+    padding: 100px 100px;
     height: 100%;
 }
 
@@ -1176,15 +1143,14 @@ width: 900px
 
     .head-grid {
       display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 999;
-        background: #fff;
+      background: #fff;
+      overflow: hidden;
+      width: 100%;
     }
 
     .head-grid .navbtn .logo {
       height: 100%;
+      width: 100%;
     }
 
     .head-grid .headerFr {
@@ -1231,7 +1197,7 @@ width: 900px
 
     .cd-bg-1 .cd-container {
         height: 100%;
-        padding: 50% 20px;
+        padding: 120px 20px;
     }
       .cd-bg-2 {
           width: 100%;
@@ -1264,7 +1230,8 @@ width: 900px
       background: url(../images/banner/bannerMobile.jpg) repeat-x top center;
       text-align: center;
       height: 480px;
-      margin-top: 30px;
+      /*margin-top: 30px;*/
+        width: 100%;
     }
 
     .banner:after {
@@ -1402,6 +1369,7 @@ width: 900px
       padding: 0 15px;
     }
     .food-supply .title {
+        border-left: none;
       margin-top: 40px;
       margin-bottom: 30px;
     }
@@ -1410,6 +1378,7 @@ width: 900px
       font-family: myFont;
       color: #e84140;
       margin: 0;
+        padding-left: 0;
     }
     .food-supply .food-supply-content {
       height: 100%;
@@ -1425,7 +1394,7 @@ width: 900px
     }
     .food-supply .food-supply-content .content-left {
       width: 100%;
-      margin-top: 16px;
+      margin-top: 20px;
     }
 
     .food-supply .food-supply-content .content-left .content-row {
@@ -1439,12 +1408,14 @@ width: 900px
       display: inline;
       font-family: myFont;
       font-size: 14px;
-      margin-left: 10px;
+      margin-left: 0;
       width: 100%;
+        padding-left: 50px;
     }
     .food-supply .food-supply-content .content-left .content-row p {
       margin-top: 5px;
-      margin-left: 45px;
+      margin-left: 0;
+        padding-left: 50px;
       font-size: 14px;
       font-family: myFont;
       color: #a1a1a1;
@@ -1468,21 +1439,24 @@ width: 900px
     /*  what is dropchain模块 */
     .dropchain-explain {
       height: 750px;
-      margin: 10px auto;
+      margin: 0 auto;
     }
     .dropchain-explain .container {
         padding: 0 15px;
     }
-    .dropchain-explain .title {
+    .dropchain-explain .container .title {
       margin-left: 0;
       width: 100%;
-        padding: 10px 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        border-left: none;
     }
-    .dropchain-explain .title h3 {
+    .dropchain-explain .container .title h3 {
       font-size: 32px;
       font-family: myFont;
       color: #e84140;
       margin: 0;
+        padding-left: 0;
     }
 
     .dropchain-explain .dropchain-content {
@@ -1494,7 +1468,7 @@ width: 900px
 
     .dropchain-explain .dropchain-content .content-right {
       width: 100%;
-      padding: 30px 0 0;
+      padding: 0;
     }
     .dropchain-explain .dropchain-content .content-right .about h4,
     .dropchain-explain .dropchain-content .content-right .solutions h4 {
@@ -1675,11 +1649,13 @@ width: 900px
     .networks-container .networks-right .networks-right-body {
       height: 100%;
       text-align: center;
+        padding: 0 20px;
     }
     .networks-container .networks-right .networks-right-body ul {
       height: 100%;
       padding: 30px 0;
       font-size: 0;
+        margin-left: 0;
     }
     .networks-container .networks-right .networks-right-body ul li {
       width: 50%;
