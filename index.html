@@ -15,6 +15,7 @@
   <title>The DropChain Project</title>
   <link rel="shortcut icon" href="static/images/logo/full-logo.png">
   <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/swiper.min.css">
   <link rel="stylesheet" href="static/css/style.css?v=1.0" />
   <link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
 </head>
@@ -108,22 +109,28 @@
       	</div>
       </div>
 
-        <!--video视频-->
+        <!--国内video-->
       <div class="video hidden-xs" id="about">
         <div class="container">
           <h3 class="text-center">What is DropChain?</h3>
           <span class="line"></span>
-          <video class="text-center" src="static/video/1531118150892465.mp4" preload="auto" controls type="video/mp4" poster="static/video/videobg0716.jpeg">您的浏览器不支持H5</video>
+          <video class="pc-video hidden-xs" src="static/video/1531118150892465.mp4" preload="auto" controls type="video/mp4" poster="static/video/videobg0716.jpeg">您的浏览器不支持H5</video>
+          <!-- 嵌入youtube视频源 -->
+          <iframe class="ytb-video hidden-xs" width="714" height="400" src="https://www.youtube.com/embed/QCsl98s69pE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
 
     </div>
     <!-- END: BANNER -->
-
+    <!--国内手机video-->
     <div class="video-mobile hidden-sm hidden-md hidden-lg" id="about2">
         <div class="container">
             <video src="static/video/1531118150892465.mp4" preload="auto" controls type="video/mp4" poster="static/video/videobg0716.jpeg">您的浏览器不支持H5</video>
         </div>
+    </div>
+    <!--youtube手机源-->
+    <div class="ytb-video-container-mb">
+      <iframe class="ytb-video-mb hidden-sm hidden-md hidden-lg" src="https://www.youtube.com/embed/QCsl98s69pE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
 
@@ -213,7 +220,7 @@
         <div class="row">
           <div class="col-md-1">
             <div class="index-title">HOW IT WORKS</div>
-            <div class="rotate-title">HOW IT WORKS</div>
+            <div class="how-work hidden-xs">HOW IT WORKS</div>
           </div>
           <div class="col-md-11">
             <div class="block-img">
@@ -502,38 +509,70 @@
 
 
     <!-- MEDIA -->
-    <div id="media">
-      <div class="row">
-        <div class="col-md-1">
-          <div class="index-title">MEDIA</div>
-          <div class="rotate-title">MEDIA</div>
+    <!--<div id="media">-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-1">-->
+          <!--<div class="index-title">MEDIA</div>-->
+          <!--<div class="rotate-title">MEDIA</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-11">-->
+          <!--<a href="http://mp.weixin.qq.com/s/3f08_juAZSsaK040lZO6yg">-->
+            <!--<div class="media-item">-->
+              <!--<div class="inner">-->
+                <!--<img src="static/images/media-1.jpg" alt="" class="media-img">-->
+                <!--<div class="media-content">-->
+                  <!--<div class="media-title">为什么区块链在供应链的应用是天作之合？</div>-->
+                  <!--<div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</a>-->
+          <!--<a href="https://medium.com/@thedropchain/dropchain-places-2nd-in-ssba-hackathon-3c8df8ac8628">-->
+            <!--<div class="media-item">-->
+              <!--<div class="inner">-->
+                <!--<img src="static/images/media-2.jpg" alt="" class="media-img">-->
+                <!--<div class="media-content">-->
+                  <!--<div class="media-title">DropChain places 2nd in SSBA Hackathon!</div>-->
+                  <!--<div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <section id="media">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="static/images/carouselMap/carousel1.jpg">
+            <p class="title">DropChain & Brander Urstoff Announce Strategic Partnership</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/carouselMap/carousel2.jpg">
+            <p class="title">DropChain at 8BTC World Conference Wuzhen</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/carouselMap/carousel3.jpg">
+            <p class="title">为什么区块链在供应链的应用是天作之合？</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="static/images/carouselMap/carousel4.jpg">
+            <p class="title">DropChain places 2nd in SSBA Hackathon!</p>
+          </div>
         </div>
-        <div class="col-md-11">
-          <a href="http://mp.weixin.qq.com/s/3f08_juAZSsaK040lZO6yg">
-            <div class="media-item">
-              <div class="inner">
-                <img src="static/images/media-1.jpg" alt="" class="media-img">
-                <div class="media-content">
-                  <div class="media-title">为什么区块链在供应链的应用是天作之合？</div>
-                  <div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://medium.com/@thedropchain/dropchain-places-2nd-in-ssba-hackathon-3c8df8ac8628">
-            <div class="media-item">
-              <div class="inner">
-                <img src="static/images/media-2.jpg" alt="" class="media-img">
-                <div class="media-content">
-                  <div class="media-title">DropChain places 2nd in SSBA Hackathon!</div>
-                  <div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev hidden-xs"></div>
+        <div class="swiper-button-next hidden-xs"></div>
+
       </div>
-    </div>
+    </section>
+
+
     <!-- END: MEDIA -->
 
     <div class="footer">
@@ -557,9 +596,9 @@
   <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="static/js/modernizr.js"></script>
   <script type="text/javascript" src="static/js/main.js"></script>
-  <!--<script src="https://github.com/ftlabs/fastclick"></script>-->
+  <script src="static/js/html5media.min.js"></script>
+  <script src="static/js/swiper.min.js"></script>
   <script type="text/javascript" src="static/js/script.js"></script>
-
 </body>
 
 </html>

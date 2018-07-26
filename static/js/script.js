@@ -1,12 +1,24 @@
 //中英文切换
-var type = navigator.appName
+var type = navigator.appName;
 if (type == "Netscape") {
     var lang = navigator.language
 } else {
     var lang = navigator.userLanguage
 }
 //取得浏览器语言的前两个字母
-var lang = lang.substr(0, 2)
+var lang = lang.substr(0, 2);
+// 如果不是国内用户
+if (lang !== 'zh') {
+  $(".pc-video").hide();
+  $(".video-mobile").hide();
+
+  $(".ytb-video").show();
+  $(".ytb-video-mb").show();
+} else {
+  $(".ytb-video").hide();
+  $(".ytb-video-mb").hide();
+
+}
 setLang(lang);
 
 $('.langToggle').on('click', function() {
@@ -96,8 +108,27 @@ $(function(){
           $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
         }
       }
-  })
+  });
 
+  // 轮播图
+  var isMobile = $(window).width() < 768 ? true : false;
+
+  var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView : !isMobile ? 2 : 1,
+    spaceBetween : 10,
+    autoplay: true,
+    loopedSlides: 2,
+    loop: true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 
 });
 
@@ -133,7 +164,6 @@ var arrPC = ["#about","#block","#team","#advisor","#networks","#media"];
 $(".nav ul li").each(function (index,element) {
   $(this).click(function () {
     var scroll_offset = $(arrPC[index]).offset();
-    console.log(scroll_offset);
     var scroll;
     if (index === 0) {
       scroll = scroll_offset.top-110;
@@ -157,11 +187,17 @@ var arrMobil = ["#about2","#block","#team","#advisor","#networks","#media"];
 $(".headerFr ul li").each(function (index,element) {
   $(this).click(function () {
     var scroll_offset = $(arrMobil[index]).offset();
-    console.log(scroll_offset);
     var scroll;
     if (index === 0) {
       $("body,html").animate({
         scrollTop: "190px"
+      },1000);
+      return false;
+    }
+    if (index === arrMobil.length-1) {
+      scroll = scroll_offset.top - 160;
+      $("body,html").animate({
+        scrollTop: scroll
       },1000);
       return false;
     }
@@ -172,5 +208,8 @@ $(".headerFr ul li").each(function (index,element) {
     return false;
   })
 });
+
+
+// 根据浏览器语言判断国内还是国外用户，设置video的src分别为国内的和youTube
 
 
