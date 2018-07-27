@@ -1686,7 +1686,7 @@ width: 900px
 
     /* 移动端NETWORKS */
     .networks-container {
-      height: 800px;
+      height: 750px;
       /*background: pink;*/
       position: relative;
       padding: 0;
@@ -1706,7 +1706,7 @@ width: 900px
     }
     .networks-container .networks-right {
       height: 100%;
-      padding: 40px 0;
+      padding: 40px 0 0 0;
     }
     .networks-container .networks-right .networks-right-head {
       width: 70%;
@@ -1784,8 +1784,14 @@ width: 900px
     .swiper-container .swiper-wrapper .swiper-slide .title {
         display: none;
     }
+    .swiper-container .swiper-pagination {
+        bottom: 30px;
+    }
 
-    /* footer */
+
+
+
+        /* footer */
     .footer-logo {
       width: 220px;
     }

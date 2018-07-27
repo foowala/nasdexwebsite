@@ -7,18 +7,6 @@ if (type == "Netscape") {
 }
 //取得浏览器语言的前两个字母
 var lang = lang.substr(0, 2);
-// 如果不是国内用户
-if (lang !== 'zh') {
-  $(".pc-video").hide();
-  $(".video-mobile").hide();
-
-  $(".ytb-video").show();
-  $(".ytb-video-mb").show();
-} else {
-  $(".ytb-video").hide();
-  $(".ytb-video-mb").hide();
-
-}
 setLang(lang);
 
 $('.langToggle').on('click', function() {
@@ -78,6 +66,29 @@ $('.head-grid .board-grid .close-btn').on('click', function() {
 });
 
 $(function(){
+
+
+  // 获取ip判断用户所在地区国家
+  var ipAddr = returnCitySN["cip"];
+  var city = returnCitySN['cname'];
+  console.log(ipAddr+","+city);
+
+  $.getJSON('http://api.map.baidu.com/location/ip?ak=F454f8a5efe5e577997931cc01de3974&ip='+ipAddr+'&callback=?', function(data) {
+    if (data.status === 0) {
+      $(".ytb-video").hide();
+      $(".ytb-video-mb").hide();
+    } else {
+      $(".pc-video").hide();
+      $(".video-mobile").hide();
+
+      $(".ytb-video").show();
+      $(".ytb-video-mb").show();
+    }
+  });
+
+
+
+
   // 页面滚动时变化
   $(document).scroll(function() {
       var height = $(document).scrollTop();
@@ -209,7 +220,5 @@ $(".headerFr ul li").each(function (index,element) {
   })
 });
 
-
-// 根据浏览器语言判断国内还是国外用户，设置video的src分别为国内的和youTube
 
 
