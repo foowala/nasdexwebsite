@@ -76,7 +76,7 @@ $(function(){
   $.getJSON('http://api.map.baidu.com/location/ip?ak=F454f8a5efe5e577997931cc01de3974&ip='+ipAddr+'&callback=?', function(data) {
     if (data.status === 0) {
       $(".ytb-video").hide();
-      $(".ytb-video-mb").hide();
+      $(".ytb-video-container-mb").hide();
     } else {
       $(".pc-video").hide();
       $(".video-mobile").hide();

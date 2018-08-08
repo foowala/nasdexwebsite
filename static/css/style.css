@@ -1237,13 +1237,14 @@ width: 900px
     }
 
     .ytb-video-container-mb {
+        overflow: hidden;
         width: 100%;
+        height: 220px;
     }
     .ytb-video-mb {
         width: 100%;
         height: 100%;
         position: relative;
-        margin: 0 auto;
         display: block;
         z-index: auto;
     }
