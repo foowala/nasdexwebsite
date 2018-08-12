@@ -695,7 +695,8 @@ ul,li {
 
 #team .team-img {
     width: 190px;
-    height: 190px;
+    height: 100%;
+    object-fit: cover;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
 }
@@ -703,9 +704,9 @@ ul,li {
 	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
     filter: grayscale(0%);
 }
-#team .james-box {
-    height: 190px;
-}
+/*#team .james-box {*/
+    /*height: 190px;*/
+/*}*/
 .james-img {
     max-height:100%;
     width: 190px;
@@ -720,15 +721,25 @@ ul,li {
 .item {
     margin-bottom: 70px;
     font-size: 12px;
+    height: 220px;
+    padding-right: 10px;
 }
-
+.item:nth-child(even) {
+    padding-right: 0;
+}
+.item .row {
+    height: 100%;
+}
+.item .item-img {
+    height: 100%;
+}
 .team-item {
     position: relative;
     padding-bottom: 20px;
     color: #000;
 }
 #team > .row .infor {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 40px;
 }
 
 .name {
@@ -782,7 +793,7 @@ ul,li {
 
 
 .networks-container {
-    height: 500px;
+    height: 550px;
     /*background: pink;*/
     position: relative;
     padding: 0 100px;
@@ -804,7 +815,7 @@ ul,li {
 }
 .networks-container .networks-right {
     height: 100%;
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 .networks-container .networks-right .networks-right-head {
     width: 70%;
@@ -828,17 +839,20 @@ ul,li {
     display: inline-block;
     width: 16.66667%;
     vertical-align: middle;
-    padding-left: 80px;
+    padding-left: 60px;
     margin: 30px auto;
 }
-.networks-container .networks-right .networks-right-body ul li:last-child {
+.networks-container .networks-right .networks-right-body ul li:nth-child(13) {
     float: left;
 }
-.networks-container .networks-right .networks-right-body ul li:nth-child(4) img {
+.networks-container .networks-right .networks-right-body ul li:nth-child(14) {
+    float: left;
+}
+.networks-container .networks-right .networks-right-body ul li:nth-child(5) img {
     display: block;
     max-width: 70%;
 }
-.networks-container .networks-right .networks-right-body ul li:nth-child(5) img {
+.networks-container .networks-right .networks-right-body ul li:nth-child(6) img {
     display: block;
     max-width: 70%;
 }
@@ -1632,13 +1646,16 @@ width: 900px
     #team .item {
         margin-bottom: 24px;
         padding: 0;
+        height: 100%;
     }
 
     #team .item .infor {
+        height: 100%;
         padding: 0 15px;
     }
 
     #team .item .infor .team-item {
+        height: 100%;
       padding: 0;
     }
 
@@ -1655,6 +1672,7 @@ width: 900px
     #team .item .infor .team-item .introduce {
       text-align: left;
       font-size: 14px;
+        height: 100%;
     }
     #team .billy-desc {
         height: 130px;
