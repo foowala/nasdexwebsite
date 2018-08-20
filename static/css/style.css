@@ -989,7 +989,7 @@ ul,li {
     line-height: 60px;
     width: 50%;
     margin: 0 auto;
-    background-color: #111;
+    background-color: #fff;
     border: none;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -997,20 +997,21 @@ ul,li {
     padding-left: 30px;
     font-size: 16px;
     outline: none;
+    color: #000;
 }
 .update-email {
     position: absolute;
     top: 5px;
     right: 25.5%;
-    width: 15%;
+    width: 18%;
     height: 50px;
     line-height: 50px;
-    background-color: #7929FB;
+    background-color: #e84140;
     text-align: center;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -1915,25 +1916,26 @@ width: 900px
         display: block;
         height: 40px;
         line-height: 40px;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        background-color: #111;
+        background-color: #fff;
         border: none;
         -webkit-border-radius: 40px;
         -moz-border-radius: 40px;
         border-radius: 40px;
         padding-left: 30px;
         font-size: 12px;
+        color: #000;
         outline: none;
     }
     .footer .update-email {
         position: absolute;
         top: 54px;
-        right: 8%;
-        width: 30%;
+        right: 4%;
+        width: 40%;
         height: 32px;
         line-height: 32px;
-        background-color: #7929FB;
+        background-color: #e84140;
         text-align: center;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
