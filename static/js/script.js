@@ -141,7 +141,24 @@ $(function(){
     }
   });
 
+    $(".know-price").on('click',function(){
+        var scroll = $('#footer').offset().top;
+        $("body,html").animate({
+            scrollTop:scroll
+        },1000);
+    })
+
+    //填写邮件后的提示模态框
+    $(".update-email").on('click', function () {
+        $("#footerModal").modal('show');
+    })
 });
+
+
+
+
+
+
 
 
 

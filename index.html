@@ -94,7 +94,7 @@
         <p class="banner-text-grid">Supply Chain Efficiency • Built on the Blockchain
           <br/> Powered by the People</p>
       </div>
-      <div class="banner-btn"><a href="static/pdf/DropChain-Whitepaper0817.pdf" download="DropChain-Whitepaper">WHITEPAPER</a></div>
+      <div class="banner-btn"><a href="static/pdf/DropChain-Whitepaper0822.pdf" download="DropChain-Whitepaper">WHITEPAPER</a></div>
       <div class="banner-btn"><a href="static/pdf/DropChain-Overview(NEW Email).pdf" download="DropChain-Whitepaper-Overview" class="overview">OVERVIEW</a></div>
       <div class="banner_footer_icon">
       	<div class="container">
@@ -141,7 +141,10 @@
             <p>We're Excited To Announce</p>
             PRIVATE PRE-SALES ARE NOW OPEN.
           </div>
-          <div class="banner-btn"><a href="https://t.me/DropChain">LET'S CHAT!</a></div>
+          <div class="banner-btn">
+            <a href="https://t.me/DropChain">LET'S CHAT!</a>
+            <a class="know-price" id="toFooter">BE THE FIRST TO KNOW</a>
+          </div>
         </div>
       </div>
     </div>
@@ -498,10 +501,6 @@
         <h3>NETWORKS</h3>
       </div>
       <div class="networks-right">
-        <div class="networks-right-head hidden-xs">
-          <p>We have established strategic partnerships with more than 11 entities. We strive to connect with all Internet platforms.
-            Together, we can unleash your online reputation value and create a more decentralized Internet.</p>
-        </div>
         <div class="networks-right-body">
           <ul>
             <li><img src="static/images/networks/PRAGMATICDLT.png"></li>
@@ -523,41 +522,7 @@
       </div>
     </section>
 
-
-    <!-- MEDIA -->
-    <!--<div id="media">-->
-      <!--<div class="row">-->
-        <!--<div class="col-md-1">-->
-          <!--<div class="index-title">MEDIA</div>-->
-          <!--<div class="rotate-title">MEDIA</div>-->
-        <!--</div>-->
-        <!--<div class="col-md-11">-->
-          <!--<a href="http://mp.weixin.qq.com/s/3f08_juAZSsaK040lZO6yg">-->
-            <!--<div class="media-item">-->
-              <!--<div class="inner">-->
-                <!--<img src="static/images/media-1.jpg" alt="" class="media-img">-->
-                <!--<div class="media-content">-->
-                  <!--<div class="media-title">为什么区块链在供应链的应用是天作之合？</div>-->
-                  <!--<div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-          <!--<a href="https://medium.com/@thedropchain/dropchain-places-2nd-in-ssba-hackathon-3c8df8ac8628">-->
-            <!--<div class="media-item">-->
-              <!--<div class="inner">-->
-                <!--<img src="static/images/media-2.jpg" alt="" class="media-img">-->
-                <!--<div class="media-content">-->
-                  <!--<div class="media-title">DropChain places 2nd in SSBA Hackathon!</div>-->
-                  <!--<div class="media-logo"><img src="static/images/logo/logo.png" class="logo-img" alt="DropChain" /></div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
+    <!-- 轮播图 -->
     <section id="media">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -577,6 +542,10 @@
             <img src="static/images/carouselMap/carousel4.jpg">
             <p class="title">DropChain places 2nd in SSBA Hackathon!</p>
           </div>
+          <div class="swiper-slide">
+            <a href="https://medium.com/the-dropchain-project/dropchain-partners-with-chinese-state-backed-accelerator-stata-869cdfc673d0"><img src="static/images/carouselMap/carousel5.jpeg"></a>
+            <p class="title">DropChain Partners with Chinese State-Backed Accelerator STATA</p>
+          </div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -591,11 +560,8 @@
 
     <!-- END: MEDIA -->
 
-    <div class="footer">
+    <div class="footer" id="footer">
       <img src="static/images/logo/logo-white.png" alt="DROPCHAIN" class="footer-logo">
-      <!--<a href="static/pdf/DropChain-Whitepaper0817.pdf" download="DropChain-Whitepaper" class="download">-->
-				<!--DOWNLOAD WHITEPAPER-->
-			<!--</a>-->
       <div class="email-input">
         <input class="email-input-content" type="text" placeholder="Email address">
         <a class="update-email" href="#javascript:;">BE THE FIRST TO KNOW</a>
@@ -609,7 +575,17 @@
         <a href="https://www.reddit.com/r/DropChainProject/" target="_blank"><img class="other-img" src="static/images/icon/reddit.png"></a>
       </div>
     </div>
-
+    <!--尾部发送邮件后的弹出模态框-->
+    <!-- Modal -->
+    <div class="modal fade" id="footerModal" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            已发送邮件地址
+          </div>
+        </div>
+      </div>
+    </div>
     
   </main>
   <script type="text/javascript" src="static/js/jquery-3.0.0.min.js"></script>

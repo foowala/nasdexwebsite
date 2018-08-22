@@ -475,6 +475,15 @@ ul,li {
     padding: 0 50px;
     width: 222px;
 }
+.banner-2 .banner-btn .know-price {
+    display: inline-block;
+    width: 330px;
+    height: 56px;
+    line-height: 48px;
+    margin-left: 30px;
+    text-align: center;
+    cursor: pointer;
+}
 
 .banner-2 .banner-btn a:hover {
     color: #fff;
@@ -794,7 +803,7 @@ ul,li {
 
 
 .networks-container {
-    height: 550px;
+    height: 500px;
     /*background: pink;*/
     position: relative;
     padding: 0 100px;
@@ -889,69 +898,10 @@ ul,li {
     margin-left: -185px;
     font-size: 16px;
 }
-/* media */
-/*.media {*/
-    /*width: 100%;*/
-    /*height: 300px;*/
-/*}*/
-/*.media .carousel {*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-/*}*/
-/*.media .carousel .carousel-inner {*/
-    /*height: 100%;*/
-/*}*/
-/*.media .carousel .carousel-inner .item {*/
-    /*height: 100%;*/
-    /*overflow:;*/
-/*}*/
-/*.media .carousel .carousel-inner .item img {*/
-    /*height: 100%;*/
-    /*object-fit: cover;*/
-    /*width: 100%;*/
-/*}*/
-
-
-
-/*#media {*/
-    /*padding: 50px 100px;*/
-/*}*/
-
-/*#media .media-title {*/
-    /*color: #000;*/
-    /*font-size: 16px;*/
-    /*line-height: 60px;*/
-/*}*/
-
-/*#media a {*/
-    /*text-decoration: none;*/
-/*}*/
-
-/*#media .media-item {*/
-    /*float: left;*/
-    /*width: 50%;*/
-    /*padding: 0 13px;*/
-/*}*/
-
-/*#media .inner {*/
-    /*box-shadow: 5px 5px 5px #a1a1a1;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*#media .media-img {*/
-    /*width: 37.6vw;*/
-    /*height: 18.75vw;*/
-/*}*/
-
-/*#media .media-logo .logo-img {*/
-    /*width: 7vw;*/
-    /*margin-bottom: 20px;*/
-/*}*/
 
 
 
 /* footer */
-
 .footer {
     padding: 50px 0;
     text-align: center;
@@ -962,21 +912,6 @@ ul,li {
 .footer-logo {
     width: 253px;
 }
-
-/*.footer .download {*/
-    /*display: block;*/
-    /*width: 476px;*/
-    /*color: #fff;*/
-    /*text-decoration: none;*/
-    /*font-size: 32px;*/
-    /*border: 2px solid #fff;*/
-    /*padding: 20px 40px;*/
-    /*margin: 40px auto 40px;*/
-/*}*/
-/*.footer .download:hover {*/
-    /*border-color: #e84140;*/
-    /*color: #e84140;*/
-/*}*/
 .email-input {
     height: 100px;
     margin-top: 30px;
@@ -1035,7 +970,9 @@ ul,li {
 }
 
 
-/* 模态框 */
+
+
+/* 头部模态框 */
 
 .modal-open {
   overflow: hidden
@@ -1205,9 +1142,19 @@ width: 900px
 
 
 
-
-
-
+/*  底部模态框 */
+#footerModal .modal-content {
+    width: 300px;
+    background-color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    top: 200px;
+}
 
 
 
@@ -1337,7 +1284,7 @@ width: 900px
 
     .cd-bg-1 .cd-container {
         height: 100%;
-        padding: 120px 20px;
+        padding: 100px 20px;
     }
       .cd-bg-2 {
           width: 100%;
@@ -1360,7 +1307,11 @@ width: 900px
       .cd-fixed-bg.cd-bg-3 {
           background: #ffffff;
       }
-
+    .banner-2 .banner-btn .know-price{
+        margin-top: 30px;
+        margin-left: 0;
+        width: 250px;
+    }
 
 
 
@@ -1835,26 +1786,6 @@ width: 900px
 
       /* 移动端media */
 
-    /*#media .media-title {*/
-      /*font-size: 16px;*/
-      /*line-height: 40px;*/
-    /*}*/
-
-    /*#media .media-item {*/
-      /*clear: both;*/
-      /*width: 100%;*/
-      /*margin-bottom: 20px;*/
-    /*}*/
-
-    /*#media .media-img {*/
-      /*width: 100%;*/
-      /*height: 100%;*/
-    /*}*/
-
-    /*#media .media-logo .logo-img {*/
-      /*width: 50px;*/
-    /*}*/
-
     .swiper-container {
         width: 100%;
         height: 300px;
@@ -1872,6 +1803,7 @@ width: 900px
     .swiper-container .swiper-pagination {
         bottom: 30px;
     }
+
 
 
 
@@ -1950,6 +1882,22 @@ width: 900px
         text-decoration: none;
         color: #fff;
     }
+    #footerModal .modal-content {
+        width: 200px;
+        background-color: #fff;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+        top: 300px;
+        left: 100px;
+    }
+
+
+
 }
 
 
