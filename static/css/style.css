@@ -42,7 +42,7 @@ ul,li {
 }
 
 .cd-fixed-bg.cd-bg-1 {
-    background-image: url("../images/lets-chat-pc.jpg");
+    background-image: url("../images/background6.jpg");
     height: 500px;
 }
 
@@ -261,7 +261,7 @@ ul,li {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 1350px;
+    /*height: 1350px;*/
 }
 
 .banner:after {
@@ -350,7 +350,7 @@ ul,li {
 
 .scroll-banner1 {
     height: 180px;
-    background-image: url("../images/banner/divide-banner1.jpg");
+    background-image: url("../images/banner/background1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -359,7 +359,7 @@ ul,li {
 
 .scroll-banner2 {
     height: 180px;
-    background-image: url("../images/banner/divide-banner2.jpg");
+    background-image: url("../images/banner/background3.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -367,7 +367,7 @@ ul,li {
 }
 .scroll-banner3 {
     height: 180px;
-    background-image: url("../images/banner/divide-banner3.jpg");
+    background-image: url("../images/banner/background2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -510,12 +510,12 @@ ul,li {
 .food-supply .title {
     width: 100%;
     margin-bottom: 40px;
-    border-left: 4px solid #e84140;
+    border-left: 4px solid #131d31;
 }
 .food-supply .title h3 {
     font-size: 42px;
     font-family: myFont;
-    color: #e84140;
+    color: #131d31;
     padding-left: 20px;
 }
 .food-supply .food-supply-content {
@@ -529,7 +529,7 @@ ul,li {
     color: #000;
 }
 .food-supply .food-supply-content .content-left {
-    width: 50%;
+    /*width: 50%;*/
     margin-top: 20px;
     padding-left: 0;
 }
@@ -602,7 +602,7 @@ ul,li {
 
 /*  what is dropchain模块 */
 .dropchain-explain {
-    height: 550px;
+    height: 400px;
     margin: 20px auto;
 }
 .dropchain-explain .container {
@@ -612,12 +612,12 @@ ul,li {
     padding: 0 100px;
 }
 .dropchain-explain .container .title {
-    border-left: 4px solid #e84140;
+    border-left: 4px solid #131a31;
 }
 .dropchain-explain .title h3 {
     font-size: 42px;
     font-family: myFont;
-    color: #e84140;
+    color: #131d31;
     padding-left: 20px;
 }
 
@@ -669,8 +669,8 @@ ul,li {
     /* about */
 
 .rotate-title {
-    color: #FC3D39;
-    border-left: 4px solid #FC3D39;
+    color: #131d31;
+    border-left: 4px solid #131d31;
     font-size: 42px;
     padding: 0 20px;
     transform: rotate(90deg);
@@ -683,8 +683,8 @@ ul,li {
 }
 
 .how-work {
-    color: #FC3D39;
-    border-left: 4px solid #FC3D39;
+    color: #131d31;
+    border-left: 4px solid #131d31;
     font-size: 42px;
     padding: 0 20px;
     transform: rotate(90deg);
@@ -733,12 +733,12 @@ ul,li {
     width: 190px;
     height: 100%;
     object-fit: cover;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);  Chrome, Safari, Opera 
+    filter: grayscale(100%);*/
 }
 #team .team-img:hover {
-	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
+	/*-webkit-filter: grayscale(0%);  Chrome, Safari, Opera 
+    filter: grayscale(0%);*/
 }
 /*#team .james-box {*/
     /*height: 190px;*/
@@ -808,12 +808,12 @@ ul,li {
 
 #advisor .advisor-img {
     width: 215px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
 }
 #advisor .advisor-img:hover {
-	-webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+	/*-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);*/
 }
 
 #advisor .team-inner {
@@ -844,10 +844,10 @@ ul,li {
     width: 10%;
 }
 .networks-container .networks-left h3 {
-    color: #FC3D39;
+    color: #131d31;
     font-size: 42px;
     transform: rotate(90deg);
-    border-left: 4px solid #FC3D39;
+    border-left: 4px solid #131d31;
     padding-left: 20px;
 }
 .networks-container .networks-right {
@@ -932,8 +932,9 @@ ul,li {
 .footer {
     padding: 50px 0;
     text-align: center;
-    background: url("../images/footer-banner0716.jpg") no-repeat center;
+    background: url("../images/background5.jpg") no-repeat center;
     color: #fff;
+    margin-top: 100px;
 }
 
 .footer-logo {
@@ -1300,7 +1301,7 @@ width: 900px
     }
 
     .cd-fixed-bg.cd-bg-1{
-      background-image: url("../images/lets-chat-mobil.jpg");
+      background-image: url("../images/background6.jpg");
       height: 480px;
       min-height: auto;
       background-size: cover;
@@ -1494,7 +1495,7 @@ width: 900px
     .food-supply .title h3 {
       font-size: 32px;
       font-family: myFont;
-      color: #e84140;
+      color: #131d31;
       margin: 0;
         padding-left: 0;
     }
@@ -1761,7 +1762,7 @@ width: 900px
       left: 10px;
     }
     .networks-container .networks-left h3 {
-      color: #e84140;
+      color: #131d31;
       font-size: 32px;
       transform: rotate(0deg);
       border-left: none;
@@ -1990,4 +1991,18 @@ width: 900px
     #advisor > .row .col-md-11 .col-md-3 {
       margin: 0 30px;
     }
+}
+
+.networks-title {
+    color: #131d31;
+    border-left: 4px solid #131d31;
+    font-size: 42px;
+    padding: 0 20px;
+    transform: rotate(90deg);
+    display: inline-block;
+    line-height: 37px;
+    position: relative;
+    top: 150px;
+    left: -152px;
+    width: 380px;
 }

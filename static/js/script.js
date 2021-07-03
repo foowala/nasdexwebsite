@@ -100,7 +100,7 @@ $(function(){
           },function() {
             $(this).css({"color":"#000"});
           });
-          $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
+          $(".logo-img").attr("src","static/images/logo/logo-white-background.png");
           $(".header-img").attr("src","static/images/icon/email-black.png");
           $(".head").css({"border-bottom":"1px solid #e4e4e4"});
       } else {
@@ -112,11 +112,11 @@ $(function(){
           $(this).css({"color":"#fff"});
         });
         $(".header-img").attr("src","static/images/icon/email-white.png");
-        $(".logo-img").attr("src","static/images/logo/logo-white0716.png");
+        $(".logo-img").attr("src","static/images/logo/logo-dark-background.png");
         $(".head").css({"border-bottom":"none"});
         var width = $(document).width();
         if (width <768) {
-          $(".logo-img").attr("src","static/images/logo/logo-red0716.png");
+          $(".logo-img").attr("src","static/images/logo/logo-white-background.png");
         }
       }
   });
