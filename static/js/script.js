@@ -96,7 +96,7 @@ $(function(){
           $(".head").css({"background":"#fff","width":"100%"});
           $(".head a").css({"color":"#000"});
           $(".head li a").hover(function() {
-            $(this).css({"color":"#e84140"});
+            $(this).css({"color":"#000"});
           },function() {
             $(this).css({"color":"#000"});
           });
@@ -107,7 +107,7 @@ $(function(){
         $(".head").css({"background": "none"});
         $(".head a").css({"color":"#fff"});
         $(".head li a").hover(function() {
-          $(this).css({"color":"#e84140"});
+          $(this).css({"color":"#fff"});
         },function() {
           $(this).css({"color":"#fff"});
         });
@@ -125,7 +125,7 @@ $(function(){
   var isMobile = $(window).width() < 768 ? true : false;
 
   var mySwiper = new Swiper('.swiper-container',{
-    slidesPerView : !isMobile ? 2 : 1,
+    slidesPerView : !isMobile ? 1 : 1,
     spaceBetween : 10,
     autoplay: true,
     loopedSlides: 2,
@@ -236,6 +236,3 @@ $(".headerFr ul li").each(function (index,element) {
     return false;
   })
 });
-
-
-
